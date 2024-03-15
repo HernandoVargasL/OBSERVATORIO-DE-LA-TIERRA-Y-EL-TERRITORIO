@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'Tajawal-Regular';
+    src: url(/fonts/Tajawal-Regular.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal-Medium';
+    src: url(/fonts/Tajawal-Regular.ttf);
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal-Bold';
+    src: url(/fonts/Tajawal-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav,
+footer {
+    font-size: 14px;
+    font-family: 'Tajawal-Regular' !important;
+}
+
+/* barra govierno */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.barra_gov {
+    background-color: #3366cc !important;
+    width: 100%;
+    height: 48px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-gov {
+    display: flex;
+    align-items: center;
+}
+
+.logo-gov img {
+    width: auto;
+    height: 27px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/* nav */
+.navbarigac {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background: var(--bg-igac-gris);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarigac .logos {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand-igac {
+    order: 1;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbarigac img {
+    order: 2;
+    height: 52px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbarigac li img,
+.navbarnavigac li img {
+    padding-right: 0;
+    padding-left: 0rem;
+    margin-left: 0.3rem;
+    width: 0.5rem;
+    height: auto;
+}
+
+.navbar-brand-igac img {
+    max-height: 35px;
+    height: 35px;
+    min-height: 35px;
+    width: auto;
+    display: block;
+    padding: 0;
+}
+
+.navbarigac ul {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.navbarigac ul li {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.navbarigac ul li a,
+.navbarnavigac ul li a {
+    color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarigac ul li a.active,
+.navbarnavigac ul li a.active {
+    color: var(--azul-igac);
+}
+
+.nav-bar-toggle-igac {
+    display: none;
+    padding: 0 15px;
+    border: 0;
+    background: none;
+}
+
+.nav-bar-toggle-igac .icon-bar {
+    display: block;
+    background: #666666;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 4px;
+    border-radius: 1px;
+}
+
+.navbarnavigac {
+    width: 100%;
+    position: absolute;
+    max-height: 0;
+    background: #E9EAEB;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.navbarnavigac.expandMenu {
+    max-height: 1200px;
+    transition: all 0.6s ease;
+}
+
+.collapse-button-1,
+.collapse-button-2 {
+    cursor: pointer;
+}
+
+.collapse-menu-1, 
+.collapse-menu-2 {
+    padding: 0;
+    width: max-content;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    display: block !important;
+    background: #fff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.11765) !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.collapse-menu-1.expand,
+.collapse-menu-2.expand {
+    max-height: 400px;
+    transition: all 0.5s ease;
+}
+
+.collapse-menu-1 li,
+.collapse-menu-2 li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 10px !important;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.collapse-menu-1 li:last-child, 
+.collapse-menu-2 li:last-child {
+    border-bottom: 0;
+}
+
+.collapse-menu-1 li img,
+.collapse-menu-2 li img {
+    display: none;
+}
+
+.collapse-menu-1 a,
+.collapse-menu-2 a {
+    padding-right: 10px;
+    width: 100%;
+    color: #666;
+}
+
+.collapse-menu-1 a:last-child,
+.collapse-menu-2 a:last-child {
+    padding-bottom: 0;
+}
+
+/* Footer*/
+footer {
+    padding-top: 1px;
+    background: #e6effd;
+    color: #000;
+}
+
+footer>.containerf,
+.gov-co-footer-pie>.containerf {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .footer-container>.rowf {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+footer .rowf>.col-md-6f {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer-container {
+    padding: 2rem;
+    margin-bottom: 50px !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    background: #fff;
+}
+
+footer .footer-titulo {
+    padding-top: 1rem;
+    font-family: 'Tajawal-Bold';
+    font-size: 1.3rem;
+    padding-top: 1rem !important;
+}
+
+.footer .logos-footer {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+footer p {
+    color: #000;
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem !important;
+}
+
+footer a {
+    color: #3366cc !important;
+    text-decoration: underline !important;
+}
+
+footer .redes-sociales a {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-enlaces a {
+    font-family: 'Tajawal-Bold';
+    text-decoration: none !important;
+    text-transform: none;
+    padding-right: 0.5rem;
+}
+
+footer .icono-redes {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.gov-co-footer-auto {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .gov-co-footer-pie {
+    background-color: #3366cc !important;
+    padding: 5px;
+}
+
+footer .gov-co-logo-pie-blanco {
+    width: auto;
+    height: 50px;
+    border-right: white solid 1px;
+    padding-right: 15px;
+}
+
+footer .gov-co-footer-auto a {
+    color: #fff !important;
+}
+
+footer .gov-co-logo-pie-mesa {
+    width: auto;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* 404 */
+.nofound .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nofound .image-container img {
+    width: 80%;
+}
+
+.nofound .text {
+    font-family: 'Tajawal-Medium';
+}
+
+/* Media querys */
+@media (max-width: 768px) {
+    .navbarigac ul {
+        display: none;
+    }
+
+    .nav-bar-toggle-igac {
+        display: block;
+    }
+
+    #link-list {
+        margin-top: 0;
+        border-top: 1.5px solid #3366cc;
+        color: #666666;
+        padding: 0 1.5rem;
+        margin-bottom: 0;
+    }
+
+    #link-list li {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #link-list li a {
+        color: #666666;
+        line-height: normal;
+    }
+
+    .barra_gov {
+        justify-content: space-between;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Footer*/
+    footer>.containerf,
+    .gov-co-footer-pie>.containerf {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Footer*/
+    footer>.containerf,
+    .gov-co-footer-pie>.containerf {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar*/
+    .collapse-menu-1 {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-top: 10px;
+    }
+
+    /* Footer*/
+    footer>.containerf,
+    .gov-co-footer-pie>.containerf {
+        max-width: 720px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    /* Navbar*/
+    .navbar-brand-igac {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .logo-gov img {
+        height: 20px;
+    }
+
+    .navbar-brand-igac img {
+        height: 30px;
+    }
+
+    /* Footer*/
+    footer>.containerf,
+    .gov-co-footer-pie>.containerf {
+        max-width: 540px;
+    }
+
+    footer .gov-co-logo-pie-blanco {
+        height: 40px;
+    }
+
+    footer .gov-co-logo-pie-mesa {
+        height: 40px;
+    }
+
+    footer .rowf>.col-md-6f {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    footer .logos-footer {
+        display: none;
+    }
+}

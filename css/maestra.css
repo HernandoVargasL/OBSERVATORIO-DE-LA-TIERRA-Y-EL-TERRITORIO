@@ -1,0 +1,163 @@
+/*global*/
+@font-face {
+    font-family: 'Gill Sans Std Bold';
+    src: url(/fonts/GillSansStd-Bold.eot);
+    src: url(/fonts/GillSansStd-Bold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Bold.woff2) format('woff2'), url(/fonts/GillSansStd-Bold.woff) format('woff'), url(/fonts/GillSansStd-Bold.ttf) format('truetype'), url(/fonts/GillSansStd-Bold.svg#GillSansStd-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Bold Italic';
+    src: url(/fonts/GillSansStd-BoldItalic.eot);
+    src: url(/fonts/GillSansStd-BoldItalic.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-BoldItalic.woff2) format('woff2'), url(/fonts/GillSansStd-BoldItalic.woff) format('woff'), url(/fonts/GillSansStd-BoldItalic.ttf) format('truetype'), url(/fonts/GillSansStd-BoldItalic.svg#GillSansStd-BoldItalic) format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std semi Bold';
+    src: url(/fonts/GillSans-SemiBold.eot);
+    src: url(/fonts/GillSans-SemiBold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSans-SemiBold.woff2) format('woff2'), url(/fonts/GillSans-SemiBold.woff) format('woff'), url(/fonts/GillSans-SemiBold.ttf) format('truetype'), url(/fonts/GillSans-SemiBold.svg#GillSans-SemiBold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Bold Condensed';
+    src: url(/fonts/GillSansStd-BoldCondensed.eot);
+    src: url(/fonts/GillSansStd-BoldCondensed.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-BoldCondensed.woff2) format('woff2'), url(/fonts/GillSansStd-BoldCondensed.woff) format('woff'), url(/fonts/GillSansStd-BoldCondensed.ttf) format('truetype'), url(/fonts/GillSansStd-BoldCondensed.svg#GillSansStd-BoldCondensed) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Italic';
+    src: url(/fonts/GillSansStd-Italic.eot);
+    src: url(/fonts/GillSansStd-Italic.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Italic.woff2) format('woff2'), url(/fonts/GillSansStd-Italic.woff) format('woff'), url(/fonts/GillSansStd-Italic.ttf) format('truetype'), url(/fonts/GillSansStd-Italic.svg#GillSansStd-Italic) format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Light';
+    src: url(/fonts/GillSansStd-Light.eot);
+    src: url(/fonts/GillSansStd-Light.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Light.woff2) format('woff2'), url(/fonts/GillSansStd-Light.woff) format('woff'), url(/fonts/GillSansStd-Light.ttf) format('truetype'), url(/fonts/GillSansStd-Light.svg#GillSansStd-Light) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std';
+    src: url(/fonts/GillSansStd.eot);
+    src: url(/fonts/GillSansStd.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd.woff2) format('woff2'), url(/fonts/GillSansStd.woff) format('woff'), url(/fonts/GillSansStd.ttf) format('truetype'), url(/fonts/GillSansStd.svg#GillSansStd) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Extra Bold Disp';
+    src: url(/fonts/GillSansStd-ExtraBoldDisp.eot);
+    src: url(/fonts/GillSansStd-ExtraBoldDisp.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-ExtraBoldDisp.woff2) format('woff2'), url(/fonts/GillSansStd-ExtraBoldDisp.woff) format('woff'), url(/fonts/GillSansStd-ExtraBoldDisp.ttf) format('truetype'), url(/fonts/GillSansStd-ExtraBoldDisp.svg#GillSansStd-ExtraBoldDisp) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Condensed';
+    src: url(/fonts/GillSansStd-Condensed.eot);
+    src: url(/fonts/GillSansStd-Condensed.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Condensed.woff2) format('woff2'), url(/fonts/GillSansStd-Condensed.woff) format('woff'), url(/fonts/GillSansStd-Condensed.ttf) format('truetype'), url(/fonts/GillSansStd-Condensed.svg#GillSansStd-Condensed) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Extra Bold';
+    src: url(/fonts/GillSansStd-ExtraBold.eot);
+    src: url(/fonts/GillSansStd-ExtraBold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-ExtraBold.woff2) format('woff2'), url(/fonts/GillSansStd-ExtraBold.woff) format('woff'), url(/fonts/GillSansStd-ExtraBold.ttf) format('truetype'), url(/fonts/GillSansStd-ExtraBold.svg#GillSansStd-ExtraBold) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    --main-bg-color: #353535;
+    --gray-color: #c1c1c1;
+    --over-color: #F4A833;
+    --azul-igac: #33669e;
+    --azul-igac-dark: #234570;
+    --bg-igac-gris: #eff0f1;
+    --rojo-igac: #e10818; 
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--gray-color);
+    background: var(--main-bg-color);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-bg-color) var(--gray-color);
+}
+
+html,
+body {
+    font-family: "Gill Sans Std";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 14px !important;
+}
+
+#userPhoto {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.container-fluid {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.buton a {
+    font-size: 14px;
+    background-color: #3595e0;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*porada*/
+.portada {
+    height: 430px;
+    border-bottom: 6px solid var(--azul-igac);
+}
+
+.img-container {
+    height: 180px; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-text {
+    min-height: 42px;
+}
+
+/*Numbers*/
+.number {
+    font-size: 7rem;
+    height: 100px;
+}
