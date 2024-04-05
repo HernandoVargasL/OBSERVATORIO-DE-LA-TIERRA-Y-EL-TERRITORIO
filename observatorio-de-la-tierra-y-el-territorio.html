@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="Ordenamiento territorial de Colombia | Colombia OT: Una plataforma del IGAC para la construcción colectiva de país." />
+    <meta name="title" property="og:title" content="Colombia OT">
+    <meta property="og:type" content="website">
+    <meta name="image" property="og:image" content="https://www.colombiaot.gov.co/images/Preview.png">
+    <meta name="keywords" content="Ordenamiento territorial, Plan de ordenamiento territorial, Pot colombia, Pot, Componente rural, Componente urbano, Dimensiones del diagnóstico, Igac, Observatorio de ordenamiento territorial, Datos del pot, Planificación territorial, Federación colombiana de municipios, La ruta del pot" />
+    <meta name="author" content="Instituto Geográfico Agustín Codazzi - IGAC" />
+    <meta http-equiv="content-language" content="es" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="canonical" href="https://www.colombiaot.gov.co" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <title>Colombia OT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    
+    <link rel="stylesheet" href="./css/maestra.css">
+    <link rel="stylesheet" href="./css/navbar-footer.css">
+</head>
+<body class="calcite calcite-nav-top">
+    <!--header-->
+    <div class="barra_gov">
+        <a class="logo-gov" href="https://www.gov.co/home/" target="_blank">
+            <img alt="Logo Gov.co" src="./images/header_govco.png">
+        </a>
+    </div>
+    <nav>
+        <div class="navbarigac">
+            <div class="logos">
+                <a href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
+                    <img alt="Logo IGAC" src="./images/logo.png">
+                </a>
+                <img src="./images/Logo_OBS.png" alt="Colombia OT">
+            </div>
+            <ul id="link-list">
+                <li>
+                    <a class="active" href="/" rel="noopener">Inicio</a>
+                </li>         
+                
+                <li>
+                    <a id="loginBtn" onclick="gotoLogin();">
+                        <img id="userPhoto" src="./images/icono_ingreso.png" onerror="defaultUserPhoto();" alt="Iniciar sesion" />
+                        <span id="userName" style="display: none;">Iniciar sesion</span>
+                    </a>
+                </li>
+            </ul>
+            <button class='nav-bar-toggle-igac'>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+            </button>
+        </div>
+        <div class='navbarnavigac'>            
+        </div>
+    </nav>
+    <!--body-->
+    <div class="herobanner">
+        <div class="container herobanner-text">
+            <div class="row pb-5">
+                <div class="col-md-6">
+                    <p class="welcome mb-0">Bienvenido al</p>
+                    <h1>
+                        <b>OBSERVATORIO DE LA</b>
+                        <br>
+                        TIERRA Y EL TERRITORIO
+                    </h1>
+                    <p class="introduction pb-3">
+                        Ordenamiento del Territorio.
+                        <br>
+                        Evaluación, monitoreo y seguimiento de los cambios en el territorio.
+                    </p>
+                    <a href="#" target="_blank">
+                        Visitar la plataforma
+                    </a>
+                </div>
+            </div>
+            <!-- If we need pagination-->               
+            <div class="swiper-pagination text-left col-12 d-flex mt-5"></div>
+        </div>
+        <img class="shape" src="images/shape.png" alt="">
+        <div class="container-fluid swiper-container">
+            <!-- Slider main container -->
+            <div class="swiper-herobanner">
+                <!-- Additional required wrapper -->            
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="hero-bg" src="images/herobanner3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="hero-bg" src="images/herobanner3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="hero-bg" src="images/herobanner3.png" alt="">
+                    </div>            
+                </div>                
+            </div>
+        </div>
+    </div>
+    <main class="position-relative">
+        <div class="section servicios pt-5 pb-4">
+            <div class="container">           
+                <h2 class="title mb-4">
+                    Servicios
+                </h2>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-button-prev swiper-prev"></div>
+                    <div class="swiper-button-next swiper-next"></div>
+                    <div id="swiper2" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="icono" src="images/satelite.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Imágenes de satélite y mosaicos</h3>
+                                        <p class="card-text">
+                                            Plataforma para acceso a imágenes diarias, mosaicos mensuales y trimestrales
+                                        </p>
+                                    </div>
+                                </div>                           
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image003.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Capacitaciones</h3>
+                                        <p class="card-text">
+                                            Acceso a cursos y material técnico de apoyo
+                                        </p>
+                                    </div>
+                                </div>                          
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image005.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Complementos servicios web</h3>
+                                        <p class="card-text">
+                                            Despliegue mediante servicios web geográficos en software (Plugin) QGIS y ArcGIS PRO
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image006.jpg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Indicadores</h3>
+                                        <p class="card-text">
+                                            Consulta de indicadores y analítica de datos obtenidos del Observatorio de la Tierra y El Territorio
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image007.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Entidades públicas</h3>
+                                        <p class="card-text">
+                                            Conozca las entidades públicas adscritas al Observatorio de la Tierra y el Territorio
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image008.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Preguntas frecuentes</h3>
+                                        <p class="card-text">
+                                            Apoyo y respuesta a las inquietudes de los usuarios
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image009.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image010.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image011.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image012.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image013.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="images/image014.png" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section noticias pt-5 pb-4">
+            <div class="container">           
+                <h2 class="title mb-4">
+                    Noticias
+                </h2>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-button-prev swiper2-prev"></div>
+                    <div class="swiper-button-next swiper2-next"></div>
+                    <div id="swiper3" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            EL 100% DE COLOMBIA YA CUENTA CON IMÁGENES SATELITALES.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac
+                                        </div>
+                                        <p>
+                                            Bogotá, D.C. 2 de febrero de 2024. El Instituto Geográfico Agustín Codazzi - IGAC lanzó la fase inicial del Observatorio de la Tierra y el Territorio, una plataforma digital con la que se obtendrán información espacial para la evaluación, monitoreo y seguimiento a los cambios que se generan en todo el territorio nacional.
+                                        </p>
+                                        <br>
+                                        <a href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="icono" src="images/news1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="icono" src="images/news2.png" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            Boletín Semanal No. 7: El 100% de Colombia ya cuenta con imágenes satelitales.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac.
+                                        </div>
+                                        <p>
+                                            La base de datos Ambientalex.info, comparte con la Comunidad Unadista el Boletín Semanal No.7 que informa sobre la normativa y los eventos en protección y preservación del medio ambiente.
+                                        </p>
+                                        <br>
+                                        <a href="https://noticias.unad.edu.co/index.php/unad-noticias/todas/88-biblioteca/6683-boletin-semanal-no-7-el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            EL 100% DE COLOMBIA YA CUENTA CON IMÁGENES SATELITALES.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac
+                                        </div>
+                                        <p>
+                                            Bogotá, D.C. 2 de febrero de 2024. El Instituto Geográfico Agustín Codazzi - IGAC lanzó la fase inicial del Observatorio de la Tierra y el Territorio, una plataforma digital con la que se obtendrán información espacial para la evaluación, monitoreo y seguimiento a los cambios que se generan en todo el territorio nacional.
+                                        </p>
+                                        <br>
+                                        <a href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="icono" src="images/news1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section objetivos pt-5 pb-4">
+            <div class="container">           
+                <h2 class="title mb-4">
+                    Objetivos
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/satelite.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Fuentes de información eficiente</h5>
+                              <p class="card-text">Uso de soluciones tecnológicas existentes, proveedores mundiales directos, propietarios de plataformas satelitales de toma de imágenes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/satelite.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Información Actualizada</h5>
+                              <p class="card-text">Análisis oportuno y multitemporal del territorio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/satelite.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Gestión asertiva de los datos</h5>
+                              <p class="card-text">Información apta para el ejercicio de múltiples entidades públicas, utilizada de manera responsable por personal idóneo, en el marco del a ICDE y la CCE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/satelite.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Asociación con entidades estatales</h5>
+                              <p class="card-text">Acercamiento con entidades públicas de orden nacional para cooperación y fortalecimiento del Observatorio de la Tierra y el Territorio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="images/satelite.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Analítica de datos Aplicación de IA</h5>
+                              <p class="card-text">Identificación de variaciones geográficas – relieve, cambios antrópicos que demarquen posibles alteraciones de la propiedad o infraestructuras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section plataforma pt-5 pb-4">
+            <div class="container">           
+                <div class="col-md-10 justify-content-center m-auto text-center">
+                    <h2 class="title">Plataforma Web Observatorio de la Tierra y el Territorio</h2>
+                    La Plataforma Web permite acceder, consultar y visualizar imágenes satelitales diarias adquiridas mediante la constelación PlanetScope y otros proveedores, sobre el territorio colombiano junto con un Basemap para su despliegue mediante servicios web geográficos en plataformas SIG. 
+                    <br>
+                    <br>
+                    El Observatorio de la Tierra y el Territorio es una herramienta que tiene como objetivo proporcionar información espacial oportuna, precisa y confiable sobre la transformación del territorio, para apoyar la toma de decisiones y la planeación estratégica del Instituto Geográfico Agustín Codazzi (IGAC) y otras entidades públicas en el marco de la Administración del Territorio.
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number">1.1</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Millones de km2</h3>
+                                <p class="card-text">
+                                    Cubrimiento de imágenes diarias
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number">3.7</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Millones de imágenes</h3>
+                                <p class="card-text">
+                                    En nuestra base de datos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number">+72</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Entidades</h3>
+                                <p class="card-text">
+                                    Adscritas a la plataforma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section pt-5 pb-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="title">
+                            ¿Qué es el OTT?
+                        </h2>
+                        <p>
+                            Plataforma virtual de información espacial, permitiendo el monitoreo y seguimiento de los cambios del territorio colombiano a partir de datos obtenidos por percepción remota. El Observatorio de la Tierra y el Territorio es una herramienta fundamental para la toma de decisiones sobre el uso del territorio, la protección de los recursos naturales y la mitigación del cambio climático. Apoya procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="card-img-top" src="images/image016.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="section pt-5 pb-4">
+            <div class="container">
+                <h2 class="title text-center">
+                    ¿Cómo funciona el Observatorio de la Tierra y el Territorio?
+                </h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img class="card-img-top" src="images/image018.png" alt="">
+                        <p class="copy mt-3">
+                            Pérdida de cobertura vegetal por procesos erosivos en la zona del Meta. Izq. Global_montly 2023-09, Der. Global_montly 2017-09
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="title">
+                            Imágenes y mosaicos
+                        </h2>
+                        <p>
+                            La plataforma del Observatorio de la Tierra y el Territorio le facilita una gran cantidad de imágenes de media y alta resolución para diversos tipos de análisis referentes a los cambios en el territorio. Las imágenes cuentan con resolución espectral de 3 a 8 bandas. Adicionalmente. 
+                            <br>
+                            <br>
+                            Las imágenes cuentan con una resolución espacial media y alta de 3.7 metros y 50 centímetros respectivamente; permitiendo la consulta y consumo de imágenes satelitales con resolución temporal diaria a nivel nacional.
+                            <br>
+                            <br>
+                            El acceso a esta información, apoyará procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas, entre otras
+                        </p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="section pt-5 pb-4">
+            <div class="container">
+                <h2 class="title text-center">
+                    Mosaicos trimestrales 2019q1 a 2020q1, desde ahí 2021q1 – 2022q1 – 2023q1. Zona entre Meta y Guaviare
+                </h2>
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image019.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image020.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image021.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image022.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image023.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image024.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image025.png" alt="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="images/image026.png" alt="">
+                    </div>
+                </div>
+                <p class="text-center">
+                    Los mosaicos trimestrales se generan a partir de imágenes diarias de PlanetScope recolectadas a lo largo de este periodo. Los mosaicos son de cobertura nacional y evitando en gran medida la presencia de nubosidad. Tambien se pueden encontrar mosaicos trimestrales con resolución espacial de 4.7 metros, resolución espectral de 3 a o bandas.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="section pt-5 pb-4">
+            <div class="container">
+                <h2 class="title text-center">
+                    Panel de consultas dentro de la plataforma
+                </h2>
+                <p>La plataforma de web es amigable con el usuario, permitiéndole realizar consultas según sus necesidades. Además de asegurar información actualizada, permite seleccionar y consumir imágenes según criterios específicos como entidad territorial, fecha, nubosidad, entre otros.</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="images/computador.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/pantallas.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="section pt-5 pb-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="images/publicoobjetivo.png" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="title">
+                            Público objetivo
+                        </h2>
+                        <p>
+                            El Observatorio de la Tierra y el Territorio no solo es una plataforma de consulta y consumo de imágenes, sino un poderoso aliado que permite a las entidades realizar análisis más precisos y confiables en el marco de la Administración del Territorio, facilitando la identificación y monitoreo de la transformación del territorio. Le invitamos a aprovechar al máximo las herramientas del Observatorio y a compartir sus aportes para seguir fortaleciendo esta iniciativa. Con su participación, podemos construir un mejor futuro para nuestro territorio.
+                        </p>
+                    </div>
+                    <div class="buton mt/6">
+                        <a href="https://www.colombiaenmapas.gov.co/observatoriotierrayterritorio" class="btn botton-primary" previewlistener="true">Empecemos o visitar el Observatorio de la Tierra y el territorio</a>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="containerf">
+            <div class="footer-container">
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="footer-titulo">Instituto Geográfico Agustín Codazzi - IGAC</h2>
+                    </div>
+                    <div class="logos-footer col-md-6f">&nbsp;</div>
+                </div>
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="sub-titulo-sede-gov-co">Información sede principal</h2>
+                    
+                        <h3>Dirección:</h3> 
+                        <p>Bogotá D.C. - Carrera 30 # 48-51</p>
+                    
+                        <h3>Horarios de atención al ciudadano:</h3>
+                        <p>Abierto al público de lunes a viernes de 9:00 a.m. a 4:00 p.m. jornada continua Sede Central y territorial Cundinamarca (Horario de atención temporal acatando las medidas y demás regulaciones de bioseguridad)</p>
+                        <h3>Teléfono Conmutador:</h3>
+                        <p>
+                            <a href="tel:6016531888">+57 601 653 18 88</a>
+                        </p>
+                        <h3>Correo de contacto:</h3>
+                        <p>
+                            <a href="mailto:contactenos@igac.gov.co">contactenos@igac.gov.co</a>
+                        </p>
+                    
+                        <h3>Correo de notificaciones judiciales:</h3>
+                        <p>
+                            <a href="mailto:judiciales@igac.gov.co">judiciales@igac.gov.co</a>
+                        </p>
+                        <p>NIT: 8999990049</p>
+                    
+                        <p>©Copyright 2021 - Todos los derechos reservados Gobierno de Colombia</p>
+                    </div>                
+                    <div class="col-md-6f">
+                        <h3>Contáctenos en nuestras redes sociales</h3>
+                    
+                        <div class="redes-sociales">
+                            <p>
+                                <a href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Facebook IGAC" class="icono-redes" src="/images/footer/facebook.svg">
+                                    Facebook IGAC 
+                                </a>
+                            </p>
+                    
+                            <p>
+                                <a href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Twitter IGAC" class="icono-redes" src="/images/footer/twitter.svg">
+                                    Twitter IGAC 
+                                </a>
+                            </p>
+                    
+                            <p>
+                                <a href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/images/footer/instagram.svg">
+                                    Instagram IGAC 
+                                </a>
+                            </p>
+                        </div>                    
+                        <div class="footer-enlaces"><a class="btn-low">Políticas</a> 
+                            <a class="btn-low">Mapa del sitio</a> 
+                            <a class="btn-low">Términos y condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gov-co-footer-pie">
+            <div class="gov-co-footer-auto containerf">
+                <img alt="Logo marca de Colombia" class="gov-co-logo-pie-blanco" src="./images/marca_colombia.png">
+
+                <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="./images/header_govco.png">
+
+                <a class="text-white text-align-right" href="https://www.gov.co" target="_blank">
+                    Conoce GOV.CO aquí
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--swipper js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper('.swiper-herobanner', {
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                loop: true, // Enable loop mode
+                autoplay: {
+                delay: 7000, // Delay between transitions (in ms)
+                disableOnInteraction: false, // Stop autoplay on user interaction
+                },
+                on: {
+                init: function() {
+                    var firstSlide = this.slides[0];
+                    firstSlide.classList.add('zoomed');
+                },
+                slideChangeTransitionStart: function() {
+                    var currentSlide = this.slides[this.activeIndex];
+                    var zoomedSlide = this.slides[this.previousIndex];
+                    
+                    if (zoomedSlide) {
+                    zoomedSlide.classList.remove('zoomed');
+                    }
+                    
+                    currentSlide.classList.add('zoomed');
+                }
+                }
+            });
+        });
+    </script>
+    <script>
+        const swiper2 = new Swiper('#swiper2', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: false,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        const swiper3 = new Swiper('#swiper3', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: false,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper2-next',
+                prevEl: '.swiper2-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+      </script>
+</body>
+</html>

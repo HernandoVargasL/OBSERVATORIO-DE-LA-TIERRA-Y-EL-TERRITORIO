@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advice Matters</title>
+
+<link rel="stylesheet" href="./Advice Matters_files/vendor.min.css" type="text/css">
+
+<link rel="stylesheet" href="./Advice Matters_files/clientlib-base.min.css" type="text/css">
+
+<link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css/>
+
+<script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+
+</head>
+
+    <body class="page basicpage ">
+
+        <style>
+
+            /*Reset template*/
+
+            .main-content {
+
+                overflow: hidden;
+
+            }
+
+            .page__container {
+
+                padding-right: 0 !important;
+
+                padding-left: 0 !important;
+
+            }
+
+            .html-component {
+
+                left: 50%;
+
+                position: relative;
+
+                width: 100vw !important;
+
+                transform: translateX(-50%);
+
+                margin-top: -15px;
+
+            }
+
+            .html-component:nth-of-type(3) {
+
+                width: 50% !important;
+
+                height: 312px;
+
+                transform: translateX(-100%);
+
+            }
+
+            .html-component:nth-of-type(4) {
+
+                margin-bottom: -30px;
+
+            }
+
+            .Active-header-2024 .visually-hidden {
+
+                display: none;
+
+            }
+
+            /*Advice titles*/
+
+            .Active-header-2024 .title {
+
+                font-size: 1.9em !important;
+
+                line-height: 1;
+
+            }
+
+            .Active-header-2024 .subtitle {
+
+                color: #125687;
+
+                font-size: 1.375rem;
+
+                line-height: 1.2;
+
+            }
+
+ 
+
+            /*Advice hero banner*/
+
+            .Active-header-2024 .homepage-bottom2a {
+
+                min-height: 300px;
+
+                background-image: url(/content/dam/dynamic/site/active-matters/Hero-banner-img.jpg);
+
+                background-size: cover;
+
+                background-position: top !important;
+
+                background-repeat: no-repeat;
+
+                background-position: top center;
+
+                overflow: hidden;
+
+                position: relative;
+
+            }
+
+            .Active-header-2024 .text-banner {
+
+                position: inherit;
+
+            }
+
+            .Active-header-2024 .text-banner .shape {
+
+                opacity: 0.9;
+
+                top: calc(50% - 125px);
+
+                left: 0;
+
+                position: absolute;
+
+                display: flex;
+
+            }      
+
+            .Active-header-2024 .text-banner .shape::before {
+
+                content: '';
+
+                width: 46vw;
+
+                height: 250px;
+
+                background: #125687;
+
+                display: flex;
+
+            }
+
+            .Active-header-2024 .text-banner .shape::after {
+
+                content: '';
+
+                -webkit-clip-path: polygon(0 0, 100% 0%, 94.5% 100%, 0% 100%);
+
+                clip-path: polygon(0 0, 100% 0%, 4.5% 122%, 0% 100%);
+
+                width: 72px;
+
+                height: 250px;
+
+                margin-left: -1px;
+
+                background: #125687;
+
+            }
+
+            .Active-header-2024 .text-banner .title {
+
+                z-index: 2;
+
+                position: relative;
+
+                margin-bottom: 0;
+
+            }
+
+            .Active-header-2024 .text-banner .callout {
+
+                z-index: 2;
+
+                position: relative;
+
+                font-size: 1rem;
+
+                font-weight: 500;
+
+            }
+
+            /*Advice intro*/
+
+            .Active-header-2024 .cpm-intro {
+
+                z-index: 10;
+
+                position: relative;
+
+                border-radius: 0.5rem;
+
+                background: #FFF;
+
+                box-shadow: 0px 2px 10px 0px rgba(0, 34, 91, 0.25);
+
+            }           
+
+            .Active-header-2024 .cpm-intro .title {
+
+                font-size: 1.4rem;
+
+                color: #125687;
+
+            }
+
+            .Active-header-2024 .cpm-intro .cmp-text {
+
+                font-size: 1.4rem;
+
+            }
+
+            /*Advice cards*/
+
+            .Active-header-2024 .dynamic-card {
+
+                margin-top: 15px;
+
+                font-size: .8rem;
+
+                line-height: 1.2;
+
+                color: #333;
+
+                border-top: 1px solid #fff;
+
+                border-right: 1px solid #ddd;
+
+                border-bottom: 1px solid #ddd;
+
+                border-left: 1px solid #fff;
+
+                position: relative;
+
+                transition: all .25s;
+
+            }           
+
+            .Active-header-2024 .dynamic-card:hover {
+
+                transform: scale(1.0125,1.0125) translateY(-2px);
+
+            }
+
+            .Active-header-2024 .card-title {
+
+                color: #125687;
+
+                font-size: 1rem !important;
+
+                font-weight: 800;
+
+            }
+
+           
+
+            /*Advice video*/
+
+            .page__container>.aem-Grid .brightcove-video {
+
+                Padding: 0 0 0 15px;
+
+            }
+
+            .Active-header-2024 .page__video .subtitle {
+
+                color: #fff;
+
+                font-size: 1.4rem;
+
+            }
+
+            .Active-header-2024 .page__video p {
+
+                font-size: .85rem;
+
+            }
+
+            .Active-header-2024 .page__video .copy {
+
+                background-color: #125687;
+
+            }
+
+            .Active-header-2024 .brightcove-video {
+
+                padding: 0;
+
+            }
+
+            .Active-header-2024 .text-CTA {
+
+                color:#FFF;
+
+                font-size:0.8em !important;
+
+            }
+
+            .Active-header-2024 #button__CTA {
+
+                color:#125687;
+
+                font-size:0.8em !important;
+
+                font-weight: 600;
+
+                text-align: center;
+
+                text-shadow: none !important;
+
+                padding:10px 20px !important;
+
+                background-color: #ffffff;
+
+                display: inline-block;
+
+                border-radius: 0;
+
+            }
+
+            /*Three Key Benefits*/
+
+            .Active-header-2024 .icons .card {
+
+                background-color: transparent;
+
+            }
+
+            .Active-header-2024 .icons .card-img-wrapper {
+
+                width: 70px;
+
+                height: 80px;
+
+                display: flex;
+
+                align-items: center;
+
+            }
+
+            .Active-header-2024 .icons .dynamic-card:hover {
+
+            transform: inherit;
+
+            }          
+
+ 
+
+            /*Advice charts*/
+
+            .Active-header-2024 .charts__container .swiper {
+
+                position: initial;
+
+                padding: 0 10px;
+
+            }
+
+            .Active-header-2024 .swiper-slide .card-img-wrapper {
+
+                width: 40px;
+
+                height: 40px;
+
+            }
+
+            .Active-header-2024 .charts__container .card-body {
+
+                padding: 0;
+
+                height: 100px;
+
+            }
+
+            .Active-header-2024 .charts__container .dynamic-card:hover {
+
+                transform: inherit;
+
+            }
+
+            .Active-header-2024 .charts__container p {
+
+                font-size: .85rem;
+
+            }
+
+            .Active-header-2024 .charts__container b {
+
+                color: #125687;
+
+                font-size: .85rem;
+
+            }
+
+            .Active-header-2024 .charts__container a {
+
+                font-size: .85rem;
+
+                color: #125687;
+
+                text-decoration: underline;          
+
+                transition: background .125s cubic-bezier(0.33,0.66,0.66,1);
+
+            }
+
+            .Active-header-2024 .charts__container .swiper-button-prev {
+
+                left: var(--swiper-navigation-sides-offset,-10px);
+
+                color: #125687;
+
+                background: transparent;
+
+                border: 0;
+
+            }
+
+ 
+
+            /*Advice cta section*/
+
+            .Active-header-2024 .cta__section {
+
+                color: #fff;
+
+                background-color: #125687;
+
+            }
+
+            .Active-header-2024 .cta__section .subtitle {
+
+                color: #fff;
+
+            }
+
+            .Active-header-2024 .source__advice {
+
+                padding-top: 20px;
+
+                font-size: 0.6rem;
+
+            }
+
+            .cta__section a {
+
+                font-size: .85rem;
+
+                color: #125687;
+
+                text-decoration: underline;
+
+            }
+
+ 
+
+            /*Collapse*/
+
+            .Active-header-2024 .collapse {
+
+                display: block;
+
+                height: 100px;
+
+                overflow: hidden;
+
+                position: relative;
+
+            }
+
+            .Active-header-2024 .collapse .card-body {
+
+                padding: 0;
+
+                font-size: 0.7em;
+
+                background: transparent;
+
+                border: 0;
+
+            }
+
+            .Active-header-2024 .collapsing {
+
+                height: 100px;
+
+            }
+
+            .Active-header-2024 .collapsing .card-body {
+
+                font-size: 0.7em;
+
+                background: transparent;
+
+                border: 0;
+
+                padding: 0;
+
+            }
+
+            .Active-header-2024 .collapse::after {
+
+                content: '';
+
+                background-image: linear-gradient(to bottom, transparent 10%, #f7f7f7);
+
+                width: 100%;
+
+                height: 100%;
+
+                position: absolute;
+
+                bottom: 0;
+
+                transition: all 1s ease;
+
+            }
+
+            .Active-header-2024 .collapse.show::after {
+
+                height: 0;
+
+                transition: all 1s ease;
+
+            }
+
+            .Active-header-2024 .collapse.show {
+
+                height: 100%;
+
+            }
+
+            #fundPerformanceChart {
+
+                height: 400px;
+
+            }
+
+ 
+
+            @media (max-width: 992px) {
+
+                /*Advice hero banner*/
+
+                .Active-header-2024 .text-banner .shape::before {
+
+                    width: 44vw;
+
+                } 
+
+            }
+
+           
+
+            @media (max-width: 768px) {
+
+                /*Advice hero banner*/
+
+                .Active-header-2024 .text-banner .shape::before {
+
+                    width: 64vw;
+
+                }
+
+                /*Advice titles*/
+
+                .Active-header-2024 .subtitle {
+
+                    font-size: 1.3em !important;
+
+                    line-height: 1;
+
+                }
+
+                .html-component:nth-of-type(3) {
+
+                    width: 100% !important;
+
+                    height: auto;
+
+                    transform: translateX(-50%);
+
+                }
+
+                /*Advice video*/
+
+                .page__container>.aem-Grid .brightcove-video {
+
+                    padding-right: 15px;
+
+                }
+
+                .Active-header-2024.page__copy--video,
+
+                .Active-header-2024 .page__video {
+
+                    padding-left: 15px;
+
+                }
+
+                .Active-header-2024 .page__video {
+
+                    align-items: center;
+
+                }
+
+                /*Advice intro*/
+
+                .Active-header-2024 .cpm-intro p {
+
+                font-size: .85rem;
+
+                }
+
+                /*Advice numbers*/
+
+                .Active-header-2024 .page__counter-numbers .cpm-item-text-advice-matters {
+
+                width: 55%;
+
+                }
+
+                /*Advice cta section*/
+
+                .Active-header-2024 .cta__section .page__container {
+
+                margin: 0;
+
+                max-width: 100%;
+
+                justify-content: center;
+
+                height: 280px;
+
+                }
+
+                .Active-header-2024 .cta__section .rectangle {
+
+                height: 75%;
+
+                width: 90%;
+
+                right: inherit;
+
+                top: calc(30% - 50px);
+
+                }
+
+                .Active-header-2024 .cta__section p {
+
+                font-size: .85rem;
+
+                }
+
+                /*Advice slider*/
+
+                .Active-header-2024 .charts__container b {
+
+                line-height: 0.7;
+
+                }
+
+                /*CTA*/
+
+                .Active-header-2024 .cta-text {
+
+                max-width: 100%;
+
+                }
+
+                }
+
+                @media (max-width: 576px) {
+
+                /*Advice hero banner*/
+
+                .Active-header-2024 .text-banner .shape::before {
+
+                    width: 84vw;
+
+                }
+
+ 
+
+                /*Advice titles*/
+
+                .Active-header-2024 .title {
+
+                font-size: 1.6em !important;
+
+                }
+
+ 
+
+                /*Advice numbers*/
+
+                .Active-header-2024 .page__counter-numbers .cpm-item-text-advice-matters {
+
+                width: 75%;
+
+                }
+
+ 
+
+                /*Advice slider*/
+
+                .Active-header-2024 .swiper .card-body {
+
+                padding-left: 20px;
+
+                }
+
+                .Active-header-2024 .swiper .card-img-wrapper,
+
+                .Active-header-2024 .swiper .card-img-side {
+
+                width: 40px !important;
+
+                max-width: 40px !important;
+
+                min-width: 40px !important;
+
+                height: 100% !important;
+
+                min-height: 100% !important;                
+
+                }
+
+ 
+
+                /*Advice cta section*/
+
+                .Active-header-2024 .cta__section .page__container {
+
+                height: 300px;
+
+                background-position: center bottom;
+
+                background-size: cover;
+
+                }
+
+                .Active-header-2024 .cta__section .rectangle {
+
+                width: 93%;
+
+                height: 90%;
+
+                top: calc(30% - 75px);
+
+                }               
+
+            }
+
+        </style>
+
+        <div class="main-content">
+
+            <div class="responsivegrid sub-header aem-GridColumn aem-GridColumn--default--12">
+
+                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+
+                    <div class="Active-header-2024">
+
+                        <div class="container-fluid align-items-center d-flex homepage-banner-top homepage-bottom2a">
+
+                            <div class="container">
+
+                                <div class="text-banner col-md-6 px-4 px-lg-5 py-4 py-md-4 py-lg-5 m-0">
+
+                                    <div class="shape"></div>
+
+                                    <h2 class="title text-light">
+
+                                    <b>Legitimately Active Management®</b>
+
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="container mt-n3">
+
+                            <div class="cpm-intro px-4 px-lg-5 py-4 justify-content-center">
+
+                                <h3 class="subtitle text-center mb-0">
+
+                                    Dynamic Funds firmly believes that Legitimately Active Management® matters.<br>                               
+
+                                    We consider it to be the cornerstone of efficient portfolio construction.
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Active-header-2024">
+
+                        <div class="container mt-5 page__video">
+
+                            <div class="row m-0">
+
+                                <div class="col-12 col-md-6 px-0">
+
+                                    <img src="/content/dam/dynamic/site/active-matters/video.png" alt="">
+
+                                </div>
+
+                                <div class="col-12 col-md-6 px-0">
+
+                                    <div class="d-flex justify-content-center h-100">
+
+                                        <div class="page__video w-100 row">
+
+                                            <div class="copy p-3 p-md-4 align-items-center d-flex text-light h-100">
+
+                                                <div class="cmp-text">
+
+                                                    <h3 class="subtitle">At Dynamic Funds, we believe in the power of professional advice.</h3>
+
+                                                    <p>
+
+                                                        Dynamic’s Portfolio Management teams leave no stone unturned in order to build investment portfolios that look nothing like the index.
+
+                                                    </p>
+
+                                                    <button id="button__CTA" class="btn">
+
+                                                        Watch Video
+
+                                                    </button>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+ 
+
+                    <div class="Active-header-2024">
+
+                        <div class="container">
+
+                            <div class="page__container icons pt-4 pb-0 mb-0">
+
+                                <h3 class="subtitle text-center">
+
+                                    Through legitimately active management, we add significant value to any investment portfolio.
+
+                                </h3>
+
+                                <p class="text-center">
+
+                                    Truly active management offers:
+
+                                </p>
+
+                                <div class="cmp-container card-deck row justify-content-between">
+
+                                    <div class="dynamic-card col-12 col-md-6 col-lg-3" style="border: 0;">
+
+                                        <div class="card-img-wrapper m-auto">
+
+                                            <img class="card-img-top" src="/content/dam/dynamic/site/active-matters/Wealth Growth.png" alt="">
+
+                                        </div>
+
+                                        <div class="card-body text-center">
+
+                                            <p>a definable method for growing wealth;</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dynamic-card col-12 col-md-6 col-lg-3" style="border: 0;">
+
+                                    <div class="card-img-wrapper m-auto">
+
+                                        <img class="card-img-top" src="/content/dam/dynamic/site/active-matters/values.png" alt="">
+
+                                    </div>
+
+                                    <div class="card-body text-center">
+
+                                        <p>real value to investors for the fees they are charged;</p>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="dynamic-card col-12 col-md-6 col-lg-3 mx-md-auto mx-lg-0" style="border: 0;">
+
+                                    <div class="card-img-wrapper m-auto">
+
+                                        <img class="card-img-top" src="/content/dam/dynamic/site/active-matters/solutions.png" alt="" style=" height: 100%; width: auto;">
+
+                                    </div>
+
+                                    <div class="card-body text-center">
+
+                                        <p>investor-specific solutions, not just products; and </p>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="dynamic-card col-12 col-md-6 col-lg-3 mx-md-auto mx-lg-0" style="border: 0;">
+
+                                    <div class="card-img-wrapper m-auto">
+
+                                        <img class="card-img-top" src="/content/dam/dynamic/site/active-matters/protection.png" alt="">         
+
+                                    </div>
+
+                                    <div class="card-body text-center">
+
+                                        <p>protection for investors from the mistakes of the herd</p>
+
+                                    </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>         
+
+                    
+
+    
+
+                        <div class="container-fluid mt-4 pt-5 pb-4 cta__section">
+
+                            <div class="container">
+
+                                <div class="card-deck row">
+
+                                    <div class="col-12 col-md-6 pb-4">
+
+                                        <div class="card m-0">
+
+                                            <img src="/content/dam/dynamic/site/active-matters/Fixed Income.png" alt="">
+
+                                            <div class="card-body">
+
+                                                <p>The Dynamic Equity Advantage Dynamic's Portfolio Managers build concentrated, high-conviction portfolios in order to deliver differentiated performance beyond the benchmark.</p>
+
+                                                <a href=https://info.securities-administrators.ca/nrsmobile/nrssearch.aspx rel="noopener" target="_blank" aria-label="Discover the Dynamic Fixed Income Advantage. (Opens in new tab)">Learn more.</a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+
+                                        <div class="card m-0">
+
+                                            <img src="/content/dam/dynamic/site/active-matters/Equity Advantage.png" alt="">
+
+                                            <div class="card-body">
+
+                                                <p>The Dynamic Fixed Income Advantage Dynamic's actively managed fixed-income Funds can respond to changing market conditions to increase opportunities and minimize risk</p>
+
+                                                <a href=https://info.securities-administrators.ca/nrsmobile/nrssearch.aspx rel="noopener" target="_blank" aria-label="Discover the Dynamic Fixed Income Advantage. (Opens in new tab)">Learn more.
+
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+   
+
+                        <div class="container mt-4">
+
+                            <div class="page__container charts__container">
+
+                                <h3 class="subtitle mb-4 text-center">
+
+                                    Active Advantage
+
+                                </h3>
+
+                                <div class="row align-items-center mb-4">
+
+                                    <div class="col-12 col-md-6 mt-sm-6">
+
+                                        <p>
+
+                                            <b>Active matters by the numbers</b>
+
+                                            Research by Financial Analyst Journal shows that managers with high active share had a net return of 1.3%, outperforming their low active share counterparts by 2.2% annually, as illustrated. The same research shows that high active share managers outperformed their respective indices by 1.35% during the same time period, after fees.1 Financial Analysts Journal Volume 69 · Number 4: "Active Share and Mutual Fund Performance", Antti Petajisto, 2013 CFA Institute.
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+
+                                        <div id="fundPerformanceChart"></div>                                       
+
+                                    </div>
+
+                                </div>
+
+                                <div class="text-center source__advice">
+
+                                    <p>Fund performance from 1990 to 2009</p>
+
+                                </div>
+
+                            </div>
+
+       
+
+                            <div class="page__container charts__container">
+
+                                <h3 class="subtitle mb-4 text-center">
+
+                                    Understanding the difference: Active management vs. closet indexing
+
+                                </h3>
+
+                                <div class="row align-items-center mb-4">
+
+                                    <div class="col-12 col-md-6">
+
+                                        <img src="img/chart2.png" alt="">
+
+                                        <div id="activeIndexing" style="width: 100%; height: 500px;"></div>
+
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+
+                                        <p>Closet indexing means that investors are paying for active management while getting less than their fair share of market returns. And it’s a problem in Canada. According to a global study of the mutual fund industry2, more than one-third of Canadian assets under management (37%) are held in closet index funds (funds with an active share below 60% yet claiming to be actively managed).
+
+                                            Rather than mirroring the benchmark, active managers aim to help deliver benchmark-beating performance.                                         
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="text-center source__advice">
+
+                                    <p>Source:  Indexing and Active Fund Management: International Evidence*. Martin Cremers et al.; January 2015.</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class=" cta__section px-0">
+
+                                <div class="cta-text text-center p-4 mb-5">
+
+                                    <h3 class="subtitle">
+
+                                        At Dynamic Funds, we believe in the power of professional advice.
+
+                                    <br>
+
+                                        Speak with a financial advisor today about building a long-term plan to more effectively reach your financial goals.
+
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="collapse" id="collapseExample">
+
+                                <div class="card card-body">
+
+                                    Commissions, trailing commissions, management fees and expenses may be associated with mutual fund investments. Please read the prospectus before investing. Mutual funds are not guaranteed, their values change frequently and past performance may not be repeated. The information provided is not intended to be investment advice. Investors should consult their own professional advisor for specific investment and/or tax advice tailored to their needs when planning to implement an investment strategy to ensure that individual circumstances are considered properly and action is taken based on the latest available information.
+
+                                    Views expressed regarding a particular investment, economy, industry or market sector should not be considered an indication of trading intent of any of the investment funds managed by Scotia Global Asset Management. These views are not to be relied upon as investment advice nor should they be considered a recommendation to buy or sell. These views are subject to change at any time based upon markets and other conditions, and we disclaim any responsibility to update such views.  To the extent this document contains information or data obtained from third party sources, it is believed to be accurate and reliable as of the date of publication, but Scotia Global Asset Management does not guarantee its accuracy or reliability. Nothing in this document is or should be relied upon as a promise or representation as to the future.
+
+                                    Scotia Global Asset Management is a business name used by 1832 Asset Management L.P. a limited partnership, the general partner of which is wholly owned by Scotiabank.
+
+                                    Dynamic Funds® is a registered trademark of The Bank of Nova Scotia, used under license by, and is a division of, 1832 Asset Management L.P.
+
+                                </div>
+
+                            </div>
+
+                            <div class="justify-content-center d-flex pb-5">
+
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false">
+
+                                Disclaimer
+
+                                </button>
+
+                            </div>                       
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Swiper JS -->
+
+        <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css>
+
+        <script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
+
+        <!-- Swiper JS -->
+
+        <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css>
+
+        <script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
+
+ 
+
+        <script src=https://cdn.amcharts.com/lib/5/index.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/xy.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/themes/Animated.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/locales/de_DE.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/geodata/germanyLow.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js></script>
+
+ 
+
+        <script src=https://cdn.amcharts.com/lib/5/index.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/xy.js></script>
+
+        <script src=https://cdn.amcharts.com/lib/5/themes/Animated.js></script>
+
+ 
+
+        <script>
+
+            am5.ready(function() {
+
+            
+
+            
+
+            // Create root element
+
+            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+
+            var root = am5.Root.new("activeIndexing");
+
+           
+
+            
+
+            // Set themes
+
+            // https://www.amcharts.com/docs/v5/concepts/themes/
+
+            root.setThemes([
+
+              am5themes_Animated.new(root)
+
+            ]);
+
+           
+
+            
+
+            // Create chart
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/
+
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+
+              panX: false,
+
+              panY: false,
+
+              wheelX: "panX",
+
+              wheelY: "zoomX",
+
+              paddingLeft: 0,
+
+              layout: root.verticalLayout
+
+            }));
+
+           
+
+            // Add scrollbar
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
+
+            chart.set("scrollbarX", am5.Scrollbar.new(root, {
+
+              orientation: "horizontal"
+
+            }));
+
+           
+
+            var data = [{
+
+              "country name": "Canada",
+
+              "trutly active": 55,
+
+              "closet indexing": 37,
+
+              "explicit indexing": 8,
+
+            }, {
+
+              "country name": "U.S",
+
+              "trutly active": 57,
+
+              "closet indexing": 15,
+
+              "explicit indexing": 28,
+
+            }, {
+
+              "country name": "Switzerland",
+
+              "trutly active": 17,
+
+              "closet indexing": 24,
+
+              "explicit indexing": 59,
+
+            }, {
+
+              "country name": "Ireland",
+
+              "trutly active": 44,
+
+              "closet indexing": 24,
+
+              "explicit indexing": 32,
+
+            }, {
+
+              "country name": "France",
+
+              "trutly active": 48,
+
+              "closet indexing": 26,
+
+              "explicit indexing": 26,
+
+            }, {
+
+              "country name": "Germany",
+
+              "trutly active": 49,
+
+              "closet indexing": 34,
+
+              "explicit indexing": 22,
+
+            },]
+
+           
+
+            
+
+            // Create axes
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+
+            var xRenderer = am5xy.AxisRendererX.new(root, {
+
+              minorGridEnabled: true
+
+            });
+
+            var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+
+              categoryField: "country name",
+
+              renderer: xRenderer,
+
+              tooltip: am5.Tooltip.new(root, {})
+
+            }));
+
+           
+
+            xRenderer.grid.template.setAll({
+
+              location: 1
+
+            })
+
+           
+
+            xAxis.data.setAll(data);
+
+           
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+
+              min: 0,
+
+              renderer: am5xy.AxisRendererY.new(root, {
+
+                strokeOpacity: 0.1
+
+              })
+
+            }));
+
+           
+
+            
+
+            // Add legend
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
+
+            var legend = chart.children.push(am5.Legend.new(root, {
+
+              centerX: am5.p50,
+
+              x: am5.p50
+
+            }));
+
+           
+
+            
+
+            // Add series
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+
+            function makeSeries(name, fieldName) {
+
+              var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+
+                name: name,
+
+                stacked: true,
+
+                xAxis: xAxis,
+
+                yAxis: yAxis,
+
+                valueYField: fieldName,
+
+                categoryXField: "country name",
+
+              }));
+
+           
+
+              series.columns.template.setAll({
+
+                tooltipText: "{name}, {categoryX}: {valueY}",
+
+                tooltipY: am5.percent(5)
+
+              });
+
+              series.data.setAll(data);
+
+           
+
+              // Make stuff animate on load
+
+              // https://www.amcharts.com/docs/v5/concepts/animations/
+
+              series.appear();
+
+           
+
+              series.bullets.push(function () {
+
+                return am5.Bullet.new(root, {
+
+                  sprite: am5.Label.new(root, {
+
+                    text: "{valueY}",
+
+                    fill: root.interfaceColors.get("alternativeText"),
+
+                    centerY: am5.p50,
+
+                    centerX: am5.p50,
+
+                    populateText: true
+
+                  })
+
+                });
+
+              });
+
+           
+
+              legend.data.push(series);
+
+            }
+
+           
+
+            makeSeries("Trutly active", "trutly active");
+
+            makeSeries("Closet indexing", "closet indexing");
+
+            makeSeries("Explicit indexing", "explicit indexing");
+
+           
+
+            
+
+            // Make stuff animate on load
+
+            // https://www.amcharts.com/docs/v5/concepts/animations/
+
+            chart.appear(1000, 100);
+
+           
+
+            }); // end am5.ready()
+
+        </script>
+
+
+
+
+
+        <script>
+
+            am5.ready(function() {
+
+           
+
+            
+
+            // Create root element
+
+            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+
+            var root = am5.Root.new("fundPerformanceChart");
+
+           
+
+            
+
+            // Set themes
+
+            // https://www.amcharts.com/docs/v5/concepts/themes/
+
+            root.setThemes([
+
+            am5themes_Animated.new(root)
+
+            ]);
+
+           
+
+            
+
+            // Create chart
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/
+
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+
+                panX: false,
+
+                panY: false,
+
+                paddingLeft: 0,
+
+                wheelX: "panX",
+
+               wheelY: "zoomX",
+
+                layout: root.verticalLayout,
+
+            }));
+
+           
+
+            
+
+            // Add legend
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
+
+            var legend = chart.children.push(
+
+                am5.Legend.new(root, {
+
+                    centerX: am5.p50,
+
+                    x: am5.p50,
+
+                    maxWidth: 550
+
+                })
+
+            );
+
+           
+
+            var data = [{
+
+                "name": "Gross return",
+
+                "stock pickers": 2.6,
+
+                "closet indexers": 0.4,
+
+                "all funds": 1.0,
+
+                }, {
+
+                "name": "Net return",
+
+                "stock pickers": 1.3,
+
+                "closet indexers": -0.9,
+
+                "all funds": -0.4,
+
+            }]
+
+           
+
+            
+
+            // Create axes
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+
+            var xRenderer = am5xy.AxisRendererX.new(root, {
+
+                cellStartLocation: 0.1,
+
+                cellEndLocation: 0.9,
+
+                minorGridEnabled: true
+
+            })
+
+           
+
+            var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+
+                categoryField: "name",
+
+                renderer: xRenderer,
+
+                tooltip: am5.Tooltip.new(root, {})
+
+            }));
+
+           
+
+            xRenderer.grid.template.setAll({
+
+                location: 1
+
+            })
+
+           
+
+            xAxis.data.setAll(data);
+
+           
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+
+                renderer: am5xy.AxisRendererY.new(root, {
+
+                    strokeOpacity: 0.1
+
+                })
+
+            }));
+
+           
+
+            
+
+            // Add series
+
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+
+            function makeSeries(name, fieldName, color) {
+
+                var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+
+                    name: name,
+
+                    xAxis: xAxis,
+
+                    yAxis: yAxis,
+
+                    valueYField: fieldName,
+
+                    categoryXField: "name",
+
+                    fill: am5.color(color)
+
+                }));
+
+           
+
+                series.columns.template.setAll({
+
+                    tooltipText: "{name}:{valueY}",
+
+                    width: am5.percent(90),
+
+                    tooltipY: 0,
+
+                    strokeOpacity: 0
+
+                });
+
+           
+
+                series.data.setAll(data);
+
+ 
+
+                series.appear();
+
+           
+
+                series.bullets.push(function () {
+
+                    return am5.Bullet.new(root, {
+
+                        locationY: data.valueY < 0 ? 0 : 0.6,
+
+                        sprite: am5.Label.new(root, {
+
+                                text: "{valueY}",
+
+                                fill: root.interfaceColors.get("alternativeText"),
+
+                                centerY: data.valueY < 0 ? 0 - (0.2 * Math.abs(0)) : 20, // Adjusted centerY value for negative values only
+
+                                centerX: am5.p50,
+
+                                populateText: true
+
+                            })
+
+                        });
+
+                    })
+
+           
+
+                    legend.data.push(series);
+
+                }
+
+           
+
+                makeSeries("Stock pickers", "stock pickers", "#125687");
+
+                makeSeries("Closet indexers", "closet indexers", "#6AA500");
+
+                makeSeries("All funds", "all funds", "#00A1C8");
+
+               
+
+                
+
+                // Make stuff animate on load
+
+                // https://www.amcharts.com/docs/v5/concepts/animations/
+
+                chart.appear(1000, 100);
+
+           
+
+            }); // end am5.ready()
+
+        </script>
+
+        <script src=https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src=https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
