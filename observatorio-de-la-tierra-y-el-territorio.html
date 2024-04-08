@@ -16,8 +16,10 @@
     <link rel="canonical" href="https://www.colombiaot.gov.co" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <title>Colombia OT</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel='stylesheet' href='https://unpkg.com/beerslider/dist/BeerSlider.css'><link rel="stylesheet" href="./style.css">
     
     
     <link rel="stylesheet" href="./css/maestra.css">
@@ -26,25 +28,25 @@
 <body class="calcite calcite-nav-top">
     <!--header-->
     <div class="barra_gov">
-        <a class="logo-gov" href="https://www.gov.co/home/" target="_blank">
+        <a class="btn" class="logo-gov" href="https://www.gov.co/home/" target="_blank">
             <img alt="Logo Gov.co" src="./images/header_govco.png">
         </a>
     </div>
     <nav>
         <div class="navbarigac">
             <div class="logos">
-                <a href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
+                <a class="btn" href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
                     <img alt="Logo IGAC" src="./images/logo.png">
                 </a>
                 <img src="./images/Logo_OBS.png" alt="Colombia OT">
             </div>
             <ul id="link-list">
                 <li>
-                    <a class="active" href="/" rel="noopener">Inicio</a>
+                    <a class="btn" class="active" href="/" rel="noopener">Inicio</a>
                 </li>         
                 
                 <li>
-                    <a id="loginBtn" onclick="gotoLogin();">
+                    <a class="btn" id="loginBtn" onclick="gotoLogin();">
                         <img id="userPhoto" src="./images/icono_ingreso.png" onerror="defaultUserPhoto();" alt="Iniciar sesion" />
                         <span id="userName" style="display: none;">Iniciar sesion</span>
                     </a>
@@ -75,13 +77,13 @@
                         <br>
                         Evaluación, monitoreo y seguimiento de los cambios en el territorio.
                     </p>
-                    <a href="#" target="_blank">
+                    <a class="btn" href="#" target="_blank">
                         Visitar la plataforma
                     </a>
                 </div>
             </div>
             <!-- If we need pagination-->               
-            <div class="swiper-pagination text-left col-12 d-flex mt-5"></div>
+            <div class="swiper-pagination swiper-pagination1 text-left col-12 d-flex mt-5"></div>
         </div>
         <img class="shape" src="images/shape.png" alt="">
         <div class="container-fluid swiper-container">
@@ -298,7 +300,7 @@
                                             Bogotá, D.C. 2 de febrero de 2024. El Instituto Geográfico Agustín Codazzi - IGAC lanzó la fase inicial del Observatorio de la Tierra y el Territorio, una plataforma digital con la que se obtendrán información espacial para la evaluación, monitoreo y seguimiento a los cambios que se generan en todo el territorio nacional.
                                         </p>
                                         <br>
-                                        <a href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                        <a class="btn" href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
                                             Ver noticia completa
                                         </a>
                                     </div>
@@ -323,7 +325,7 @@
                                             La base de datos Ambientalex.info, comparte con la Comunidad Unadista el Boletín Semanal No.7 que informa sobre la normativa y los eventos en protección y preservación del medio ambiente.
                                         </p>
                                         <br>
-                                        <a href="https://noticias.unad.edu.co/index.php/unad-noticias/todas/88-biblioteca/6683-boletin-semanal-no-7-el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                        <a class="btn" href="https://noticias.unad.edu.co/index.php/unad-noticias/todas/88-biblioteca/6683-boletin-semanal-no-7-el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
                                             Ver noticia completa
                                         </a>
                                     </div>                                    
@@ -342,7 +344,7 @@
                                             Bogotá, D.C. 2 de febrero de 2024. El Instituto Geográfico Agustín Codazzi - IGAC lanzó la fase inicial del Observatorio de la Tierra y el Territorio, una plataforma digital con la que se obtendrán información espacial para la evaluación, monitoreo y seguimiento a los cambios que se generan en todo el territorio nacional.
                                         </p>
                                         <br>
-                                        <a href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                        <a class="btn" href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
                                             Ver noticia completa
                                         </a>
                                     </div>
@@ -356,7 +358,7 @@
                 </div>
             </div>
         </div>
-        <div class="section objetivos pt-5 pb-4">
+        <div class="section objetivos pt-5">
             <div class="container">           
                 <h2 class="title mb-4">
                     Objetivos
@@ -410,7 +412,7 @@
                 </div>
             </div>
         </div>
-        <div class="section plataforma pt-5 pb-4">
+        <div class="section plataforma">
             <div class="container">           
                 <div class="col-md-10 justify-content-center m-auto text-center">
                     <h2 class="title">Plataforma Web Observatorio de la Tierra y el Territorio</h2>
@@ -456,7 +458,23 @@
                 </div>
             </div>
         </div>
-        <div class="section pt-5 pb-4">
+        <div class="section video pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex pr-0">
+                        <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/783QSo2BG-0?si=jtbHwi7WKzVRp9kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-text col-md-6 d-flex align-items-center">
+                        <div class="text px-3">
+                            <h4 class="title mb-4 text-left">¿Cómo funciona el Observatorio de la Tierra y el Territorio?</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ipsum repellat odit illum blanditiis nam labore. Quae dolorum, recusandae illum, deleniti aut, ipsum quos similique neque voluptas quas sed tempore?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section pt-5 pb-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -473,21 +491,24 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="section pt-5 pb-4">
+        <hr> -->
+        <div class="section swiper-section pt-5 pb-5">
             <div class="container">
-                <h2 class="title text-center">
-                    ¿Cómo funciona el Observatorio de la Tierra y el Territorio?
-                </h2>
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img class="card-img-top" src="images/image018.png" alt="">
+                        <div class="swiper-module">
+                            <div class="beer-slider">
+                                 <div class="pat1" data-beer-src=""></div>
+                                <dic class="beer-reveal">
+                                <div class="pat2" data-beer-src=""></div>
+                            </div>
+                        </div>
                         <p class="copy mt-3">
                             Pérdida de cobertura vegetal por procesos erosivos en la zona del Meta. Izq. Global_montly 2023-09, Der. Global_montly 2017-09
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <h2 class="title">
+                        <h2 class="title text-left">
                             Imágenes y mosaicos
                         </h2>
                         <p>
@@ -503,78 +524,109 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="section pt-5 pb-4">
+        <img class="shape" src="images/shape2.png" alt="">
+        <div class="section wizard pt-5 pb-5">
             <div class="container">
-                <h2 class="title text-center">
-                    Mosaicos trimestrales 2019q1 a 2020q1, desde ahí 2021q1 – 2022q1 – 2023q1. Zona entre Meta y Guaviare
-                </h2>
-                <div class="row mt-4 mb-4">
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image019.png" alt="">
+                <div class="row">
+                    <div class="wizard-buttons col-md-4">
+                        <div class="btn w-100">Mosaicos trimestrales</div>
+                        <button class="btn active">2019q1</button>
+                        <button class="btn">2020q1</button>
+                        <button class="btn">2021q1</button>
+                        <button class="btn">2022q1</button>
+                        <button class="btn">2023q1</button>
+                        <button class="btn">Zona entre Meta</button>
+                        <button class="btn">Guaviare</button>
                     </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image020.png" alt="">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image021.png" alt="">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image022.png" alt="">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image023.png" alt="">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image024.png" alt="">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image025.png" alt="">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <img src="images/image026.png" alt="">
+                    <div class="steps col-md-8">
+            
+                        <div class="step active">
+                            <div class="img-container">
+                                <img src="./images/image019.png" alt="inicio">
+                                <p>2019q1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                            </div>
+                        </div>
+            
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="images/image020.png" alt="inicio">
+                            </div>
+                            <p>2020q1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                        </div>
+            
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="images/image021.png" alt="inicio">
+                            </div>
+                            <p>2021q1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                        </div>
+            
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="images/image022.png" alt="inicio">
+                            </div>
+                            <p>2022q1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="images/image023.png" alt="inicio">
+                            </div>
+                            <p>2023q1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="images/image024.png" alt="inicio">
+                            </div>
+                            <p>Zona entre Meta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="images/image025.png" alt="inicio">
+                            </div>
+                            <p>Guaviare Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente.</p>
+                        </div>
+            
+                        <!-- Add more steps here if needed -->
+            
                     </div>
                 </div>
-                <p class="text-center">
-                    Los mosaicos trimestrales se generan a partir de imágenes diarias de PlanetScope recolectadas a lo largo de este periodo. Los mosaicos son de cobertura nacional y evitando en gran medida la presencia de nubosidad. Tambien se pueden encontrar mosaicos trimestrales con resolución espacial de 4.7 metros, resolución espectral de 3 a o bandas.
-                </p>
-            </div>
+            </div>                
         </div>
-        <hr>
-        <div class="section pt-5 pb-4">
+        <div class="section pt-5 pb-5">
             <div class="container">
                 <h2 class="title text-center">
                     Panel de consultas dentro de la plataforma
                 </h2>
                 <p>La plataforma de web es amigable con el usuario, permitiéndole realizar consultas según sus necesidades. Además de asegurar información actualizada, permite seleccionar y consumir imágenes según criterios específicos como entidad territorial, fecha, nubosidad, entre otros.</p>
-                <div class="row align-items-center">
+                <div class="row align-items-center mt-5">
                     <div class="col-md-6">
-                        <img src="images/computador.png" alt="">
+                        <img src="images/preview.png" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="images/pantallas.png" alt="">
+                        <img src="images/preview.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="section pt-5 pb-5">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-3">
-                        <img class="card-img-top" src="images/publicoobjetivo.png" alt="">
+        <div class="section panel-consultas pt-5 pb-5">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-6">
+                            <img class="card-img-top" src="images/preview_1.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="title text-left">
+                                Público objetivo
+                            </h2>
+                            <p>
+                                El Observatorio de la Tierra y el Territorio no solo es una plataforma de consulta y consumo de imágenes, sino un poderoso aliado que permite a las entidades realizar análisis más precisos y confiables en el marco de la Administración del Territorio, facilitando la identificación y monitoreo de la transformación del territorio. Le invitamos a aprovechar al máximo las herramientas del Observatorio y a compartir sus aportes para seguir fortaleciendo esta iniciativa. Con su participación, podemos construir un mejor futuro para nuestro territorio.
+                            </p>
+                        </div>               
                     </div>
-                    <div class="col-md-9">
-                        <h2 class="title">
-                            Público objetivo
-                        </h2>
-                        <p>
-                            El Observatorio de la Tierra y el Territorio no solo es una plataforma de consulta y consumo de imágenes, sino un poderoso aliado que permite a las entidades realizar análisis más precisos y confiables en el marco de la Administración del Territorio, facilitando la identificación y monitoreo de la transformación del territorio. Le invitamos a aprovechar al máximo las herramientas del Observatorio y a compartir sus aportes para seguir fortaleciendo esta iniciativa. Con su participación, podemos construir un mejor futuro para nuestro territorio.
-                        </p>
-                    </div>
-                    <div class="buton mt/6">
-                        <a href="https://www.colombiaenmapas.gov.co/observatoriotierrayterritorio" class="btn botton-primary" previewlistener="true">Empecemos o visitar el Observatorio de la Tierra y el territorio</a>
-                    </div>                
                 </div>
             </div>
         </div>
@@ -600,16 +652,16 @@
                         <p>Abierto al público de lunes a viernes de 9:00 a.m. a 4:00 p.m. jornada continua Sede Central y territorial Cundinamarca (Horario de atención temporal acatando las medidas y demás regulaciones de bioseguridad)</p>
                         <h3>Teléfono Conmutador:</h3>
                         <p>
-                            <a href="tel:6016531888">+57 601 653 18 88</a>
+                            <a class="btn" href="tel:6016531888">+57 601 653 18 88</a>
                         </p>
                         <h3>Correo de contacto:</h3>
                         <p>
-                            <a href="mailto:contactenos@igac.gov.co">contactenos@igac.gov.co</a>
+                            <a class="btn" href="mailto:contactenos@igac.gov.co">contactenos@igac.gov.co</a>
                         </p>
                     
                         <h3>Correo de notificaciones judiciales:</h3>
                         <p>
-                            <a href="mailto:judiciales@igac.gov.co">judiciales@igac.gov.co</a>
+                            <a class="btn" href="mailto:judiciales@igac.gov.co">judiciales@igac.gov.co</a>
                         </p>
                         <p>NIT: 8999990049</p>
                     
@@ -620,28 +672,28 @@
                     
                         <div class="redes-sociales">
                             <p>
-                                <a href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
+                                <a class="btn" href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
                                     <img alt="Visitar Facebook IGAC" class="icono-redes" src="/images/footer/facebook.svg">
                                     Facebook IGAC 
                                 </a>
                             </p>
                     
                             <p>
-                                <a href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
+                                <a class="btn" href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
                                     <img alt="Visitar Twitter IGAC" class="icono-redes" src="/images/footer/twitter.svg">
                                     Twitter IGAC 
                                 </a>
                             </p>
                     
                             <p>
-                                <a href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/images/footer/instagram.svg">
+                                <a class="btn" href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/images/footer/instagram.svg">
                                     Instagram IGAC 
                                 </a>
                             </p>
                         </div>                    
-                        <div class="footer-enlaces"><a class="btn-low">Políticas</a> 
-                            <a class="btn-low">Mapa del sitio</a> 
-                            <a class="btn-low">Términos y condiciones</a>
+                        <div class="footer-enlaces"><a class="btn" class="btn-low">Políticas</a> 
+                            <a class="btn" class="btn-low">Mapa del sitio</a> 
+                            <a class="btn" class="btn-low">Términos y condiciones</a>
                         </div>
                     </div>
                 </div>
@@ -653,7 +705,7 @@
 
                 <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="./images/header_govco.png">
 
-                <a class="text-white text-align-right" href="https://www.gov.co" target="_blank">
+                <a class="btn" class="text-white text-align-right" href="https://www.gov.co" target="_blank">
                     Conoce GOV.CO aquí
                 </a>
             </div>
@@ -663,92 +715,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
     <!--swipper js-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var swiper = new Swiper('.swiper-herobanner', {
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                loop: true, // Enable loop mode
-                autoplay: {
-                delay: 7000, // Delay between transitions (in ms)
-                disableOnInteraction: false, // Stop autoplay on user interaction
-                },
-                on: {
-                init: function() {
-                    var firstSlide = this.slides[0];
-                    firstSlide.classList.add('zoomed');
-                },
-                slideChangeTransitionStart: function() {
-                    var currentSlide = this.slides[this.activeIndex];
-                    var zoomedSlide = this.slides[this.previousIndex];
-                    
-                    if (zoomedSlide) {
-                    zoomedSlide.classList.remove('zoomed');
-                    }
-                    
-                    currentSlide.classList.add('zoomed');
-                }
-                }
-            });
-        });
-    </script>
-    <script>
-        const swiper2 = new Swiper('#swiper2', {
-            // Optional parameters
-            direction: 'horizontal',
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: false,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-
-        const swiper3 = new Swiper('#swiper3', {
-            // Optional parameters
-            direction: 'horizontal',
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: false,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper2-next',
-                prevEl: '.swiper2-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-      </script>
+    <script src='https://unpkg.com/beerslider/dist/BeerSlider.js'></script>
+    <script  src="./script.js"></script>
+    
 </body>
 </html>
