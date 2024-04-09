@@ -354,7 +354,7 @@ main .wizard .step p {
     position: absolute;
     padding: 5px 15px 3px;
     color: #fff;
-    background: #23292e;
+    background: #23292e69;
 }
 main .wizard .step .img-container {
     height: 390px;
