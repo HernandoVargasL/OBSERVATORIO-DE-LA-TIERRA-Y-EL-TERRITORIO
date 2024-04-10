@@ -239,7 +239,7 @@ main .objetivos .card-title {
 
 /* plataforma */
 main .plataforma {
-    height: 550px;
+    height: 600px;
     display: flex;
     align-items: center;
     background-image: url('../images/cultivos.png');
