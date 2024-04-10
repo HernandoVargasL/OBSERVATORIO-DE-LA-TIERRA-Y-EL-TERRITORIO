@@ -304,7 +304,7 @@ main .container a.btn {
 
 /* objetivos */
 .objetivos .card-img-top {
-    width: 150px;
+    width: 130px;
     margin: auto;
 }
 
@@ -314,7 +314,7 @@ main .objetivos .card-title {
 
 /* plataforma */
 main .plataforma {
-    height: 600px;
+    height: 550px;
     display: flex;
     align-items: center;
     background-image: url('../images/cultivos.png');
