@@ -249,6 +249,7 @@ main .video .card-text .title {
     color: #fff;
 }
 
+/* swiperjs */
 .swiper-container .container-swiper {
     position: relative;
     width: 100%;
@@ -273,8 +274,12 @@ main .video .card-text .title {
     cursor: pointer;
     z-index: 2;
 }
+.que-es-ott .text {
+    flex-wrap: wrap;
+}
 
 
+/* swiperbeer */
 .swiper-section .beer-slider {
     position: absolute;
     width: 100%;
@@ -282,7 +287,7 @@ main .video .card-text .title {
 }  
 .swiper-section .swiper-module {
     position: relative;
-    height: 315px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,12 +296,12 @@ main .video .card-text .title {
     font-family: Montserrat;
 }
 .swiper-section .pat1 {
-    background-image: url(../images/derecha-febrero-2024.jpg);
+    background-image: url(../images/derecha-febrero-2024.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .swiper-section .pat2 {
-    background-image: url(../images/izquierda-agosto-2023.jpg);
+    background-image: url(../images/izquierda-agosto-2023.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -314,13 +319,6 @@ main .video .card-text .title {
 }
 .swiper-section a {
     color: inherit;
-}
-
-.step {
-    display: none;
-}
-.step.active {
-    display: block;
 }
 
 /* wizard */
@@ -342,8 +340,10 @@ main .wizard .wizard-buttons button.active {
     background: #3169af;
 }
 main .wizard .wizard-buttons div.btn {
-    font-size: 1.5rem;
-    line-height: normal; 
+    font-size: 1.3rem;
+    line-height: normal;
+    white-space: wrap;
+    text-align: left;
 }
 main .wizard .step {
     position: relative;
@@ -368,4 +368,10 @@ main .panel-consultas {
 }
 main .panel-consultas .title {
     color: #fff;
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
 }
