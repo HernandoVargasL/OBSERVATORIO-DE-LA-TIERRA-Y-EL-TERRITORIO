@@ -29,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 14px !important;
+    font-size: 16px !important;
     background: #f7f7f7;
 }
 #userPhoto {
@@ -179,18 +179,20 @@ main .container a.btn {
     line-height: normal;
 }
 .servicios #swiper2 {
-    height: 295px;
+    height: 330px;
 }
 .servicios .swiper-slide {
     display: flex;
     align-items: center;
 }
 .servicios .card.d-flex {
-    height: 130px;
+    height: 150px;
     flex-direction: inherit;
     color: #fff;
     border: 0;
     background-image: url('../images/cards-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     align-items: center;
     padding: 20px 15px;
