@@ -30,6 +30,7 @@ body {
     padding: 0;
     width: 100%;
     font-size: 16px !important;
+    line-height: normal;
     background: #f7f7f7;
 }
 #userPhoto {
@@ -83,6 +84,7 @@ main .title {
     text-transform: uppercase;
     text-align: center;
     color: #10406f;
+    font-family: 'Gill Sans Std Bold';
 }
 main .subtitle {
     font-size: 1.5rem;
@@ -139,6 +141,7 @@ main .container a.btn {
 }
 .herobanner-text b {
     color: #3169af;
+    font-family: 'Gill Sans Std Bold';
 }
 .herobanner a {
     color: #fff;
@@ -228,13 +231,14 @@ main .container a.btn {
 
 /* objetivos */
 .objetivos .card-img-top {
-    width: 130px;
+    width: 100px;
     height: 100px;
     margin: auto;
 }
 
 main .objetivos .card-title {
     color: #10406f;
+    height: 57px;
 }
 
 /* plataforma */
