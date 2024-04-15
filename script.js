@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const swiper2 = new Swiper('#swiper2', {
         // Optional parameters
         direction: 'horizontal',
-        slidesPerView: 3,
         grid: {
           rows: 2,
         },
@@ -52,6 +51,24 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollbar: {
             el: '.swiper-scrollbar',
         },
+
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 768px
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is <= 480px
+            510: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
     });
     
     const swiper3 = new Swiper('#swiper3', {
