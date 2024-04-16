@@ -55,44 +55,46 @@
         </div>
     </nav>
     <!--body-->
-    <div class="herobanner">
-        <div class="container herobanner-text">
-            <div class="row pb-5">
-                <div class="col-md-8 col-lg-6">
-                    <h1>
-                        <b>Entidades Adscritas al</b>
-                        <br>Observatorio de la Tierra y el Territorio
-                    </h1>
-                    <a class="volver" href="../" target="_blank">
-                        Volver a la Pagina de inicio
-                    </a>
+    <div class="herobanner-container">
+        <div class="herobanner">
+            <div class="container herobanner-text">
+                <div class="row pb-5">
+                    <div class="col-md-8 col-lg-6">
+                        <a class="volver mb-3" href="../">
+                            Volver a la Pagina de inicio
+                        </a>
+                        <h1>
+                            <b>Entidades Adscritas al</b>
+                            <br>Observatorio de la Tierra y el Territorio
+                        </h1>
+                    </div>
                 </div>
+                <!-- If we need pagination-->               
+                <div class="swiper-pagination swiper-pagination1 text-left col-12 d-flex mt-5"></div>
             </div>
-            <!-- If we need pagination-->               
-            <div class="swiper-pagination swiper-pagination1 text-left col-12 d-flex mt-5"></div>
-        </div>
-        <img class="shape" src="./images/shape.png" alt="">
-        <div class="container-fluid swiper-container">
-            <!-- Slider main container -->
-            <div class="swiper-herobanner">
-                <!-- Additional required wrapper -->            
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img class="hero-bg" src="./images/hero1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="hero-bg" src="./images/hero2.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="hero-bg" src="./images/hero3.jpg" alt="">
-                    </div>            
-                </div>                
+            <div class="container-fluid swiper-container">
+                <!-- Slider main container -->
+                <div class="swiper-herobanner">
+                    <!-- Additional required wrapper -->            
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="./images/hero1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="./images/hero2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="./images/hero3.jpg" alt="">
+                        </div>            
+                    </div>                
+                </div>
             </div>
         </div>
     </div>
     <main class="position-relative">
-        <div class="section entidades">
+        <div class="section entidades servicios">
+            <img class="shape" src="./images/shape.png" alt="">
             <div class="container">                
                 <p class="mt-5 text-center">El Observatorio de la Tierra y el Territorio proporciona información espacial oportuna, precisa y confiable sobre la transformación del territorio para apoyar la toma de decisiones y la planeación estratégica en el marco de la Administración del Territorio a más de 70 entidades por medio de una licencia multientidad para Entidad Gobierno. A continuación, se presenta el listado de entidades.</p>
                 <hr>
@@ -100,12 +102,10 @@
         </div>
         <div class="section lista mt-0 pt-0">
             <div class="container">
-                <div class="col-md-6 m-auto pb-5">
-                    <input class="w-100" type="text" id="filterInput" placeholder="Bucar por nombre..">
-                </div>
                 <ul class="p-0" id="listaEntidades">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
+                            <input class="w-100 mb-3" type="text" id="filterInput" placeholder="Bucar por nombre..">
                             <li class="list-item title">Agricultura y Desarrollo Rural
                               <ul>
                                 <li class="list-item">Agencia de Desarrollo Rural (ADR)</li>
@@ -158,8 +158,6 @@
                                 <li class="list-item">Ministerio de Ciencia, Tecnología e Innovación</li>
                               </ul>
                             </li>
-                        </div>
-                        <div class="col-md-6">
                             <li class="list-item title">Educación
                               <ul>
                                 <li class="list-item">Ministerio de Educación Nacional</li>
@@ -235,6 +233,9 @@
                                 <li class="list-item">Departamento Nacional de Planeación</li>
                               </ul>
                             </li>
+                        </div>
+                        <div class="col-md-4 logos">
+                            logos
                         </div>
                     </div>
                 </ul>
@@ -335,7 +336,6 @@
         document.getElementById('filterInput').addEventListener('input', function() {
             var filterValue = this.value.toLowerCase();
             var listItems = document.querySelectorAll('.list-item');
-            var columns = document.querySelectorAll('#listaEntidades .col-md-6');
     
             // Ocultar todos los elementos
             listItems.forEach(function(item) {
@@ -356,11 +356,9 @@
                 });
     
                 if (!hasVisibleItems) {
-                    column.style.display = 'none'; // Ocultar el col-md-6
                     var title = column.previousElementSibling.querySelector('.title');
                     title.style.display = 'none'; // Ocultar el título
                 } else {
-                    column.style.display = 'block'; // Mostrar el col-md-6
                     var title = column.previousElementSibling.querySelector('.title');
                     title.style.display = 'block'; // Mostrar el título
                 }

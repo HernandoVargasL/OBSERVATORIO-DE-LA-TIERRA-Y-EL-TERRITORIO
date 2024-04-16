@@ -310,6 +310,8 @@ footer {
     padding-top: 1px;    
     background: #e6effd;
     color: #000;
+    position: relative;
+    z-index: 1;
 }
 
 footer > .containerf,

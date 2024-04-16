@@ -55,51 +55,53 @@
         </div>
     </nav>
     <!--body-->
-    <div class="herobanner">
-        <div class="container herobanner-text">
-            <div class="row pb-5">
-                <div class="col-md-8 col-lg-6">
-                    <p class="welcome mb-0">Bienvenido al</p>
-                    <h1>
-                        <b>OBSERVATORIO DE LA</b>
-                        <br>
-                        TIERRA Y EL TERRITORIO
-                    </h1>
-                    <p class="introduction pb-3">
-                        Ordenamiento del Territorio.
-                        <br>
-                        Evaluación, monitoreo y seguimiento de los cambios en el territorio.
-                    </p>
-                    <a class="btn px-3 py-2" href="https://www.colombiaenmapas.gov.co/observatoriotierrayterritorio" target="_blank">
-                        Visitar la plataforma
-                    </a>
+    <div class="herobanner-container">
+        <div class="herobanner">
+            <div class="container herobanner-text">
+                <div class="row pb-5">
+                    <div class="col-md-8 col-lg-6">
+                        <p class="welcome mb-0">Bienvenido al</p>
+                        <h1>
+                            <b>OBSERVATORIO DE LA</b>
+                            <br>
+                            TIERRA Y EL TERRITORIO
+                        </h1>
+                        <p class="introduction pb-3">
+                            Ordenamiento del Territorio.
+                            <br>
+                            Evaluación, monitoreo y seguimiento de los cambios en el territorio.
+                        </p>
+                        <a class="btn px-3 py-2" href="https://www.colombiaenmapas.gov.co/observatoriotierrayterritorio" target="_blank">
+                            Visitar la plataforma
+                        </a>
+                    </div>
                 </div>
+                <!-- If we need pagination-->               
+                <div class="swiper-pagination swiper-pagination1 text-left col-12 d-flex mt-5"></div>
             </div>
-            <!-- If we need pagination-->               
-            <div class="swiper-pagination swiper-pagination1 text-left col-12 d-flex mt-5"></div>
-        </div>
-        <img class="shape" src="./images/shape.png" alt="">
-        <div class="container-fluid swiper-container">
-            <!-- Slider main container -->
-            <div class="swiper-herobanner">
-                <!-- Additional required wrapper -->            
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img class="hero-bg" src="./images/hero1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="hero-bg" src="./images/hero2.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="hero-bg" src="./images/hero3.jpg" alt="">
-                    </div>            
-                </div>                
+            <div class="container-fluid swiper-container">
+                <!-- Slider main container -->
+                <div class="swiper-herobanner">
+                    <!-- Additional required wrapper -->            
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="./images/hero1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="./images/hero2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="hero-bg" src="./images/hero3.jpg" alt="">
+                        </div>            
+                    </div>                
+                </div>
             </div>
         </div>
     </div>
     <main class="position-relative">
         <div class="section servicios">
+            <img class="shape" src="./images/shape.png" alt="">
             <div class="container">           
                 <h2 class="title mb-4">
                     Servicios
@@ -107,6 +109,7 @@
                 <div class="position-relative d-flex align-items-center">
                     <div class="swiper-button-prev swiper-prev"></div>
                     <div class="swiper-button-next swiper-next"></div>
+                    <div class="swiper-pagination swiper-pagination2 col-12 d-flex mt-5"></div>
                     <div id="swiper2" class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -558,6 +561,7 @@
                     Noticias
                 </h2>
                 <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-pagination swiper-pagination3 col-12 d-flex mt-5"></div>
                     <div class="swiper-button-prev swiper2-prev"></div>
                     <div class="swiper-button-next swiper2-next"></div>
                     <div id="swiper3" class="swiper">
@@ -696,12 +700,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    
     <!--swipper js-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src='https://unpkg.com/beerslider/dist/BeerSlider.js'></script>
-    <script  src="./script.js"></script>
+    <script src="./script.js"></script>
     
 </body>
 </html>

@@ -1,5 +1,5 @@
+new BeerSlider(document.querySelector(".beer-slider"))
 document.addEventListener("DOMContentLoaded", function() {
-    new BeerSlider(document.querySelector(".beer-slider"))
     var swiper1 = new Swiper('.swiper-herobanner', {
         effect: 'fade',
         fadeEffect: {
@@ -52,6 +52,12 @@ document.addEventListener("DOMContentLoaded", function() {
             el: '.swiper-scrollbar',
         },
 
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination2',
+            clickable: true,
+        },
+
         // Responsive breakpoints
         breakpoints: {
             // when window width is <= 768px
@@ -78,7 +84,11 @@ document.addEventListener("DOMContentLoaded", function() {
         spaceBetween: 30,
         loop: false,
     
-
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination3',
+            clickable: true,
+        },
     
         // Navigation arrows
         navigation: {

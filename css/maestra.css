@@ -74,6 +74,7 @@ main .btn a {
 
 /*Main*/
 main {
+    background: #f7f7f7;
     z-index: 1000;
 }
 main .section {
@@ -82,6 +83,10 @@ main .section {
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
+}
+main .section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 40px;
 }
 main .title {
     font-weight: 600;
@@ -133,11 +138,6 @@ main .container a.btn {
     position: absolute;
     z-index: 10;
 }
-.herobanner .shape {
-    bottom: -80px;
-    position: absolute;
-    z-index: 1000;
-}
 .herobanner-text {
     color: #fff;
     position: absolute;
@@ -170,6 +170,28 @@ main .container a.btn {
     border: 2px solid #fff;
     background: transparent !important;
 }
+.swiper-pagination2 .swiper-pagination-bullet {
+    background: #10406f !important;
+}
+.swiper-pagination2 .swiper-pagination-bullet-active {
+    border: 2px solid #10406f;
+    background: transparent !important;
+}
+.swiper-pagination3 .swiper-pagination-bullet {
+    background: #10406f !important;
+}
+.swiper-pagination3 .swiper-pagination-bullet-active {
+    border: 2px solid #10406f;
+    background: transparent !important;
+}
+.swiper-pagination2 {
+    justify-content: center;
+    bottom: var(--swiper-pagination-bottom, -30px) !important;
+}
+.swiper-pagination3 {
+    justify-content: center;
+    bottom: var(--swiper-pagination-bottom, -30px) !important;
+}
 .swiper-slide img {
     width: 100%;
     transition: transform 10s;
@@ -189,6 +211,11 @@ main .container a.btn {
 /* servicios */
 .servicios {
     line-height: normal;
+}
+.servicios .shape {
+    top: -7vw;
+    position: absolute;
+    z-index: -1000;
 }
 .servicios #swiper2 {
     height: 330px;
@@ -561,21 +588,36 @@ main .panel-consultas .title {
     }
 }
 
-
+.herobanner-container {
+    position: sticky;
+    top: 60px;
+}
 .herobanner .volver {
     background: transparent;
 }
 #listaEntidades ul {
     margin-bottom: 20px;
     list-style: none;
+    padding-left: 0;
 }
 main #listaEntidades .title {
     font-family: 'Gill Sans' !important;
     text-transform: capitalize !important;
     text-align: left;
     list-style: none;
+    font-size: 24px;
 }
 #listaEntidades ul li {
+    font-size: 16px;
     font-weight: 500;
     color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#listaEntidades ul li:last-child {
+    margin-bottom: 30px;
+}
+#listaEntidades .logos {
+    width: 100%;
+    height: 800px;
 }
