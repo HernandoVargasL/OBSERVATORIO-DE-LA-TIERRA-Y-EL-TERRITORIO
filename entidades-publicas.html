@@ -304,7 +304,7 @@
                                 <li><img src="./images/entidades/unidad_nacional_proteccion.svg" alt="Unidad Nacional de Protección (UNP)"></li>
                                 <li><img src="./images/entidades/unidad_planeacion_infraestructura_transporte.svg" alt="Unidad de Planeación del Sector de Infraestructura de Transporte (UPIT)"></li>
                                 <li><img src="./images/entidades/unidad_planeacion_minero_energetica.svg" alt="Unidad de Planeación Minero-Energética (UPME)"></li>
-                                <li><img src="./images/entidades/unidad_renuncacion_cultivos_ilicitos.svg" alt="Dirección de Sustitución de Cultivos de Uso Ilícito"></li>
+                                <li><img src="./images/entidades/direecion_sustitucion_cultivos_ilicitos.svg" alt="Dirección de Sustitución de Cultivos de Uso Ilícito"></li>
                             </ul>
                                                                                      
                         </div>
@@ -406,7 +406,7 @@
     <script>
         document.getElementById('filterInput').addEventListener('input', function() {
             var filterValue = this.value.toLowerCase().trim();
-            var listItems = document.querySelectorAll('li');
+            var listItems = document.querySelectorAll('#listaEntidades li');
     
             listItems.forEach(function(item) {
                 var itemName = item.textContent.toLowerCase().trim();

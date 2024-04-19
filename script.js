@@ -1,5 +1,5 @@
-new BeerSlider(document.querySelector(".beer-slider"))
 document.addEventListener("DOMContentLoaded", function() {
+    new BeerSlider(document.querySelector(".beer-slider"))
     var swiper1 = new Swiper('.swiper-herobanner', {
         effect: 'fade',
         fadeEffect: {

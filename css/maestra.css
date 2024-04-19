@@ -450,6 +450,13 @@ main .video .card-text .title {
     color: inherit;
 }
 
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+
 /* wizard */
 main .wizard {
     margin-top: -4px;

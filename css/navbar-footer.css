@@ -107,7 +107,7 @@ nav a {
     text-decoration: none;    
 }
 
-input {
+input#filterInput {
     display: block;
     width: 100%;
     line-height: 1.25;
