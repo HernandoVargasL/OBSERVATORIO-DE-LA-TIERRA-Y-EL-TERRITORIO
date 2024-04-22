@@ -617,6 +617,11 @@ main .panel-consultas .title {
         bottom: -1px;
     }
 
+    .swiper-slide .hero-bg {
+        width: 250%;
+        background-size: 250%;
+        background-position: left bottom;
+    }
     .swiper-button-next {
         color: #10406f !important;
         right: var(--swiper-navigation-sides-offset, 0px) !important;
@@ -628,6 +633,10 @@ main .panel-consultas .title {
     .swiper-button-next:after, 
     .swiper-button-prev:after {
         font-size: 20px !important;
+    }
+
+    main .servicios {
+        margin-top: -10px;
     }
 
     .que-es-ott .col-md-6:first-child {

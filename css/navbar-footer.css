@@ -351,7 +351,7 @@ footer .rowf > .col-md-6f {
 
 footer .footer-titulo {
     padding-top: 16px;
-    font-family: 'Tajawal-Bold';
+    
     font-size: 20px;
     padding-top: 16px!important;
 }
@@ -387,7 +387,7 @@ footer .redes-sociales a {
 }
 
 footer .footer-enlaces a {
-    font-family: 'Tajawal-Bold';
+    
     text-decoration: none !important;
     text-transform: none;
     padding-right: 8px;
@@ -541,6 +541,10 @@ footer .gov-co-logo-pie-mesa {
 
     footer .gov-co-logo-pie-mesa {
         height: 40px;
+    }
+
+    footer .gov-co-footer-auto a {
+        font-size: 12px;
     }
 
     footer .rowf > .col-md-6f {
