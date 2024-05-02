@@ -545,7 +545,11 @@ main .panel-consultas .title {
         color: #10406f !important;
         left: var(--swiper-navigation-sides-offset, -30px) !important;
     }
-
+    .swiper-slide .hero-bg {
+        position: absolute;
+        width: 170%;
+        right: -30%;
+    }
     .video .pr-0 {
         padding-right: 15px !important;
     }
@@ -617,10 +621,13 @@ main .panel-consultas .title {
         bottom: -1px;
     }
 
+    .swiper-slide {
+        position: relative;
+    }
     .swiper-slide .hero-bg {
+        position: absolute;
         width: 250%;
-        background-size: 250%;
-        background-position: left bottom;
+        right: -50%;
     }
     .swiper-button-next {
         color: #10406f !important;
@@ -673,8 +680,7 @@ main .panel-consultas .title {
         padding: 5px 15px 3px;
         color: #fff;
         background: #23292e69;
-    }
-    
+    }  
 
     .noticias #swiper3 {
         height: 500px;
