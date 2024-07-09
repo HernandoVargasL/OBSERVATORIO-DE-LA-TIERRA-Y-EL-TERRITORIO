@@ -10,11 +10,11 @@
     <meta name="author" content="Instituto Geográfico Agustín Codazzi - IGAC" />
     <meta name="title" property="og:title" content="Colombia en Mapas">
     <meta property="og:type" content="website">
-    <meta name="image" property="og:image" content="https://www.colombiaenmapas.gov.co/images/Preview.svg">
+    <meta name="image" property="og:image" content="https://www.colombiaenmapas.gov.co/images/Preview.png">
     <meta http-equiv="content-language" content="es" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <link rel="canonical" href="https://www.colombiaot.gov.co" />
-    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="shortcut icon" href="/observatoriotierrayterritorio/images/favicon.ico" />
     <title>Observatorio de la Tierra y el Territorio</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,23 +22,23 @@
     <link rel='stylesheet' href='https://unpkg.com/beerslider/dist/BeerSlider.css'>
 
 
-    <link rel="stylesheet" href="./css/navbar-footer.css">
-    <link rel="stylesheet" href="./css/maestra.css">
+    <link rel="stylesheet" href="/observatoriotierrayterritorio/css/navbar-footer.css">
+    <link rel="stylesheet" href="/observatoriotierrayterritorio/css/maestra.css">
 </head>
 <body class="calcite calcite-nav-top">
     <!--header-->
     <div class="barra_gov">
         <a class="logo-gov" href="https://www.gov.co/home/" target="_blank">
-            <img alt="Logo Gov.co" src="./images/header_govco.svg">
+            <img alt="Logo Gov.co" src="/observatoriotierrayterritorio/images/header_govco.png">
         </a>
     </div>
     <nav>
         <div class="navbarigac">
             <div class="logos">
                 <a href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
-                    <img alt="Logo IGAC" src="./images/logo.svg">
+                    <img alt="Logo IGAC" src="/observatoriotierrayterritorio/images/logo.png">
                 </a>
-                <img src="./images/Logo_OBS.svg" alt="Diccionario Geográfico de Colombia">
+                <img src="/observatoriotierrayterritorio/images/Logo_OBS.png" alt="Diccionario Geográfico de Colombia">
             </div>
             <ul id="link-list">
                 <li>
@@ -60,13 +60,20 @@
             <div class="container herobanner-text">
                 <div class="row pb-5">
                     <div class="col-md-8 col-lg-6">
-                        <a class="volver mb-3" href="../">
-                            Volver a la Pagina de inicio
-                        </a>
+                        <p class="welcome mb-0">Bienvenido al</p>
                         <h1>
-                            <b>Entidades Adscritas al</b>
-                            <br>Observatorio de la Tierra y el Territorio
+                            <b>OBSERVATORIO DE LA</b>
+                            <br>
+                            TIERRA Y EL TERRITORIO
                         </h1>
+                        <p class="introduction pb-3">
+                            Ordenamiento del Territorio.
+                            <br>
+                            Evaluación, monitoreo y seguimiento de los cambios en el territorio.
+                        </p>
+                        <a class="btn px-3 py-2" href="/observatoriotierrayterritorio/visor/" target="_blank">
+                            Visitar la plataforma
+                        </a>
                     </div>
                 </div>
                 <!-- If we need pagination-->               
@@ -79,13 +86,13 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img class="hero-bg" src="./images/hero1.jpg" alt="">
+                            <img class="hero-bg" src="/observatoriotierrayterritorio/images/hero1.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="hero-bg" src="./images/hero2.jpg" alt="">
+                            <img class="hero-bg" src="/observatoriotierrayterritorio/images/hero2.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="hero-bg" src="./images/hero3.jpg" alt="">
+                            <img class="hero-bg" src="/observatoriotierrayterritorio/images/hero3.jpg" alt="">
                         </div>            
                     </div>                
                 </div>
@@ -93,251 +100,519 @@
         </div>
     </div>
     <main class="position-relative">
-        <div class="section entidades servicios">
-            <img class="shape" src="./images/shape.svg" alt="">
-            <div class="container">                
-                <p class="mt-5 text-center">El Observatorio de la Tierra y el Territorio proporciona información espacial oportuna, precisa y confiable sobre la transformación del territorio para apoyar la toma de decisiones y la planeación estratégica en el marco de la Administración del Territorio a más de 70 entidades por medio de una licencia multientidad para Entidad Gobierno. A continuación, se presenta el listado de entidades.</p>
-                <hr>
+        <div class="section servicios">
+            <img class="shape" src="/observatoriotierrayterritorio/images/shape.png" alt="">
+            <div class="container">           
+                <h2 class="title mb-4">
+                    Servicios
+                </h2>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-button-prev swiper-prev"></div>
+                    <div class="swiper-button-next swiper-next"></div>
+                    <div class="swiper-pagination swiper-pagination2 col-12 d-flex mt-5"></div>
+                    <div id="swiper2" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="/observatoriotierrayterritorio/visor/" target=”_blank” class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="icono" src="/observatoriotierrayterritorio/images/satelite.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Imágenes de satélite y mosaicos</h3>
+                                        <p class="card-text">
+                                            Plataforma para acceso a imágenes diarias, mosaicos mensuales y trimestrales
+                                        </p>
+                                    </div>
+                                </a>                           
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://forms.gle/Q2XDkJ5xDvLmX9847" target="_blank" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/capacitaciones.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Capacitaciones</h3>
+                                        <p class="card-text">
+                                            Acceso a cursos y material técnico por Espacios designados para solicitar capacitación del Observatorio de la Tierra y el Territorio.
+                                        </p>
+                                    </div>
+                                </a>                          
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://igacoffice365-my.sharepoint.com/:f:/g/personal/elkin_gongora_igac_gov_co/EtP4UOSUshxBmfBqFMHdjWgBpmJlLBZfhjwfi1L_Pghs_w" target=”_blank” class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/compllementos.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Complementos servicios web</h3>
+                                        <p class="card-text">
+                                            Despliegue mediante servicios web geográficos en software (Plugin) QGIS y ArcGIS PRO
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://enterpriseaws.procalculo.com/arcgis/apps/dashboards/bdf0dbf3ac5c4515a887d7279d2c0759" target="_blank" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/indicadores.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Indicadores</h3>
+                                        <p class="card-text">
+                                            Consulta de indicadores y analítica de datos obtenidos del Observatorio de la Tierra y El Territorio
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/observatoriotierrayterritorio/entidades-publicas.html" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/entidades.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Entidades públicas</h3>
+                                        <p class="card-text">
+                                            Conozca las entidades públicas adscritas al Observatorio de la Tierra y el Territorio
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://observatorios-organization.gitbook.io/observatorio-de-la-tierra-y-el-territorio/soporte-y-faq/preguntas-frecuentes-faq" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/faqs.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Preguntas frecuentes</h3>
+                                        <p class="card-text">
+                                            Apoyo y respuesta a las inquietudes de los usuarios
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://observatorios-organization.gitbook.io/observatorio-de-la-tierra-y-el-territorio/soporte-y-faq/contacto-de-soporte" class="card d-flex">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/soporte.svg" alt="">
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <h3 class="card-title">Soporte</h3>
+                                        <p class="card-text">
+                                            Asistencia técnica continua, garantizando una operación sin contratiempos.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section lista mt-0 pt-0">
+        <div class="section que-es-ott">
             <div class="container">
-                <ul class="p-0" id="listaEntidades">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <input class="w-100 mb-3" type="text" id="filterInput" placeholder="Bucar por nombre..">
-                            <li class="list-item title">Agricultura y Desarrollo Rural
-                              <ul>
-                                <li class="list-item">Agencia de Desarrollo Rural (ADR)</li>
-                                <li class="list-item">Agencia Nacional de Tierras (ANT)</li>
-                                <li class="list-item">Autoridad Nacional de Acuicultura y Pesca (AUNAP)</li>
-                                <li class="list-item">Instituto Colombiano Agropecuario (ICA)</li>
-                                <li class="list-item">Ministerio de Agricultura - Gestión General</li>
-                                <li class="list-item">Unidad Administrativa Especial de Gestión de Restitución de Tierras Despojadas</li>
-                                <li class="list-item">Unidad de Planificación Rural Agropecuaria (UPRA)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Ambiente y Desarrollo Sostenible
-                              <ul>
-                                <li class="list-item">Corporación Autónoma Regional de Boyacá (CORPOBOYACÁ)</li>
-                                <li class="list-item">Corpocaldas</li>
-                                <li class="list-item">Corpochivor</li>
-                                <li class="list-item">Corporación Autónoma Regional de la Frontera Nororiental (CORPONOR)</li>
-                                <li class="list-item">Corpoguajira</li>
-                                <li class="list-item">Corporación Autónoma Regional de la Orinoquía (CORPORINOQUIA)</li>
-                                <li class="list-item">Corporación CVS</li>
-                                <li class="list-item">Corporación Autónoma Regional de Nariño (CORPONARIÑO)</li>
-                                <li class="list-item">Corporación Autónoma Regional de Risaralda (CARDER)</li>
-                                <li class="list-item">Corporación Autónoma Regional de Santander (CAS)</li>
-                                <li class="list-item">Corporación Autónoma Regional de Sucre (CARSUCRE)</li>
-                                <li class="list-item">Corporación Autónoma Regional del Alto Magdalena (CAM)</li>
-                                <li class="list-item">Corporación Autónoma Regional del Atlántico (CRA)</li>
-                                <li class="list-item">Cardique</li>
-                                <li class="list-item">Corporación Autónoma Regional del Centro de Antioquia (CORANTIOQUIA)</li>
-                                <li class="list-item">Corpocesar</li>
-                                <li class="list-item">Corpoguavio</li>
-                                <li class="list-item">Corporación Autónoma Regional del Magdalena (CORPAMAG)</li>
-                                <li class="list-item">Corporación Autónoma Regional del Quindío (CRQ)</li>
-                                <li class="list-item">Corporación Autónoma Regional del Sur de Bolívar (CSB)</li>
-                                <li class="list-item">Corporación Autónoma Regional para el Desarrollo Sostenible del Chocó (CODECHOCO)</li>
-                                <li class="list-item">Corporación Autónoma Regional para la Defensa de la Meseta de Bucaramanga (CDMB)</li>
-                                <li class="list-item">Corporación para el Desarrollo Sostenible de la Mojana y El San Jorge (CORPOMOJANA)</li>
-                                <li class="list-item">Corporación para el Desarrollo Sostenible del Archipiélago de San Andrés, Providencia y Santa Catalina (CORALINA)</li>
-                                <li class="list-item">Cormacarena</li>
-                                <li class="list-item">Corporación para el Desarrollo Sostenible del Norte y Oriente de la Amazonía (CDA)</li>
-                                <li class="list-item">Corporación para el Desarrollo Sostenible del Sur de la Amazonía (CORPOAMAZONIA)</li>
-                                <li class="list-item">Corpouraba</li>
-                                <li class="list-item">Cortolima</li>
-                                <li class="list-item">Ministerio de Ambiente y Desarrollo Sostenible</li>
-                                <li class="list-item">Corporación Autónoma Regional del Cauca (CRC)</li>
-                                <li class="list-item">Corporación Autónoma Regional del Valle del Cauca (CVC)</li>
-                                <li class="list-item">Corporación Autónoma Regional de Cundinamarca (CAR)</li>
-                                <li class="list-item">Corporación Autónoma Regional de las Cuencas de los Ríos Negro y Nare (CORNARE)</li>
-                                <li class="list-item">Instituto de Investigaciones Marinas y Costeras José Benito Vives de Andréis (INVEMAR)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Ciencia, Tecnología e Innovación
-                              <ul>
-                                <li class="list-item">Ministerio de Ciencia, Tecnología e Innovación</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Cultura
-                              <ul>
-                                <li class="list-item">Instituto Colombiano de Antropología (ICANH)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Educación
-                              <ul>
-                                <li class="list-item">Ministerio de Educación Nacional</li>
-                                <li class="list-item">Universidad Distrital Francisco José de Caldas (UDFJC)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Información Estadística
-                              <ul>
-                                <li class="list-item">Departamento Administrativo Nacional de Estadística (DANE)</li>
-                                <li class="list-item">Instituto Geográfico Agustín Codazzi (IGAC)</li>
-                                <li class="list-item">Unidad Administrativa Especial de Catastro Distrital (UAECD)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Inteligencia
-                              <ul>
-                                <li class="list-item">Dirección Nacional de Inteligencia (DNI)</li>
-                                <li class="list-item">Unidad de Atención y Reparación Integral a las Víctimas</li>
-                                <li class="list-item">Unidad de Búsqueda de Personas Dadas por Desaparecidas en el Contexto y en Razón del Conflicto Armado (UBPD)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Interior
-                              <ul>
-                                <li class="list-item">Corporación Nacional para la Reconstrucción de la Cuenca del Río Páez y Zonas Aledañas NASA KI WE</li>
-                                <li class="list-item">Unidad Nacional de Protección (UNP)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Minas y Energía
-                              <ul>
-                                <li class="list-item">Instituto de Planificación y Promoción de Soluciones Energéticas para Zonas No Interconectadas (IPSE)</li>
-                                <li class="list-item">Ministerio de Minas y Energía - Gestión General</li>
-                                <li class="list-item">Servicio Geológico Colombiano</li>
-                                <li class="list-item">Unidad de Planeación Minero-Energética (UPME)</li>
-                                <li class="list-item">Comisión de Regulación de Energía y Gas (CREG)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Planeación Territorial
-                              <ul>
-                                <li class="list-item">Departamento Nacional de Planeación</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Presidencia de la República
-                              <ul>
-                                <li class="list-item">Agencia de Renovación del Territorio (ART)</li>
-                                <li class="list-item">Agencia Nacional Inmobiliaria Virgilio Barco Vargas</li>
-                                <li class="list-item">Agencia para la Reincorporación y la Normalización (ARN)</li>
-                                <li class="list-item">Dirección de Sustitución de Cultivos de Uso Ilícito</li>
-                                <li class="list-item">Unidad Nacional para la Gestión del Riesgo de desastres</li>
-                                <li class="list-item">Gobernación de Antioquia</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Registraduría
-                              <ul>
-                                <li class="list-item">Registraduría Nacional del Estado Civil</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Seguridad y Justicia
-                              <ul>
-                                <li class="list-item">Sociedad de Activos Especiales (SAE)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Trabajo
-                              <ul>
-                                <li class="list-item">Servicio Nacional de Aprendizaje (SENA)</li>
-                                <li class="list-item">Superintendencia de Puertos y Transporte</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Transporte
-                              <ul>
-                                <li class="list-item">Agencia Nacional de Infraestructura</li>
-                                <li class="list-item">Agencia Nacional de Seguridad Vial</li>
-                                <li class="list-item">Instituto Nacional de Vías</li>
-                                <li class="list-item">Ministerio de Transporte</li>
-                                <li class="list-item">Unidad Administrativa Especial de la Aeronáutica Civil</li>
-                                <li class="list-item">Unidad de Planeación del Sector de Infraestructura de Transporte (UPIT)</li>
-                              </ul>
-                            </li>
-                            <li class="list-item title">Vivienda, Ciudad y Territorio
-                              <ul>
-                                <li class="list-item">Comisión de Regulación de Agua Potable y Saneamiento Básico (CRA)</li>
-                                <li class="list-item">Ministerio de Vivienda, Ciudad y Territorio</li>
-                                <li class="list-item">CISA</li>
-                                <li class="list-item">Fondo Adaptación</li>
-                              </ul>
-                            </li>
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="text">
+                            <h2 class="title text-left">
+                                ¿Qué es el OTT?
+                            </h2>
+                            <p>Plataforma virtual de información espacial, permitiendo el monitoreo y seguimiento de los cambios del territorio colombiano a partir de datos obtenidos por percepción remota.
+                            <br>
+                            <br>                        
+                            El Observatorio de la Tierra y el Territorio es una herramienta fundamental para la toma de decisiones sobre el uso del territorio, la protección de los recursos naturales y la mitigación del cambio climático. Apoya procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas.</p>                            
                         </div>
-                          
-                        <div class="col-md-4 logos">
-                            <ul>
-                                <li><img src="./images/entidades/agencia_desarrollo_rural.svg" alt="Agencia de Desarrollo Rural (ADR)"></li>
-                                <li><img src="./images/entidades/agencia_nacional_tierras.svg" alt="Agencia Nacional de Tierras (ANT)"></li>
-                                <li><img src="./images/entidades/autoridad_nacional_acuicultura_pesca.svg" alt="Autoridad Nacional de Acuicultura y Pesca (AUNAP)"></li>
-                                <li><img src="./images/entidades/instituto_colombiano_agropecuario.svg" alt="Instituto Colombiano Agropecuario (ICA)"></li>
-                                <li><img src="./images/entidades/ministerio_agricultura.svg" alt="Ministerio de Agricultura - Gestión General"></li>
-                                <li><img src="./images/entidades/unidad_administrativa_catastro_distrital.svg" alt="Unidad Administrativa Especial de Gestión de Restitución de Tierras Despojadas"></li>
-                                <li><img src="./images/entidades/agencia_desarrollo_rural.svg" alt="Unidad de Planificación Rural Agropecuaria (UPRA)"></li>
-                                <li><img src="./images/entidades/corpoboyaca.svg" alt="Corporación Autónoma Regional de Boyacá (CORPOBOYACÁ)"></li>
-                                <li><img src="./images/entidades/corpocaldas.svg" alt="Corpocaldas"></li>
-                                <li><img src="./images/entidades/corpochivor.svg" alt="Corpochivor"></li>
-                                <li><img src="./images/entidades/corponor.svg" alt="Corporación Autónoma Regional de la Frontera Nororiental (CORPONOR)"></li>
-                                <li><img src="./images/entidades/corpoguajira.svg" alt="Corpoguajira"></li>
-                                <li><img src="./images/entidades/corporacion_desarrollo_sostenible_norte_oriente_amazonico.svg" alt="Corporación Autónoma Regional de la Orinoquía (CORPORINOQUIA)"></li>
-                                <li><img src="./images/entidades/cardique.svg" alt="Corporación CVS"></li>
-                                <li><img src="./images/entidades/corponarino.svg" alt="Corporación Autónoma Regional de Nariño (CORPONARIÑO)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_nacional_risaralda.svg" alt="Corporación Autónoma Regional de Risaralda (CARDER)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_santander.svg" alt="Corporación Autónoma Regional de Santander (CAS)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_sucre.svg" alt="Corporación Autónoma Regional de Sucre (CARSUCRE)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_alto_magdalena.svg" alt="Corporación Autónoma Regional del Alto Magdalena (CAM)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_atlantico.svg" alt="Corporación Autónoma Regional del Atlántico (CRA)"></li>
-                                <li><img src="./images/entidades/cardique.svg" alt="Cardique"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_centro_antioquia.svg" alt="Corporación Autónoma Regional del Centro de Antioquia (CORANTIOQUIA)"></li>
-                                <li><img src="./images/entidades/corpocesar.svg" alt="Corpocesar"></li>
-                                <li><img src="./images/entidades/corpoguavio.svg" alt="Corpoguavio"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_magdalena.svg" alt="Corporación Autónoma Regional del Magdalena (CORPAMAG)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_quindio.svg" alt="Corporación Autónoma Regional del Quindío (CRQ)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_sur_bolivar.svg" alt="Corporación Autónoma Regional del Sur de Bolívar (CSB)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_desarrollo_sostenible_choco.svg" alt="Corporación Autónoma Regional para el Desarrollo Sostenible del Chocó (CODECHOCO)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_defensa_meseta_bucaramanga.svg" alt="Corporación Autónoma Regional para la Defensa de la Meseta de Bucaramanga (CDMB)"></li>
-                                <li><img src="./images/entidades/coralina.svg" alt="Corporación para el Desarrollo Sostenible de la Mojana y El San Jorge (CORPOMOJANA)"></li>
-                                <li><img src="./images/entidades/cormacarena.svg" alt="Corporación para el Desarrollo Sostenible del Archipiélago de San Andrés, Providencia y Santa Catalina (CORALINA)"></li>
-                                <li><img src="./images/entidades/corporacion_desarrollo_sostenible_norte_oriente_amazonico.svg" alt="Cormacarena"></li>
-                                <li><img src="./images/entidades/corporacion_desarrollo_sostenible_sur_amazonia.svg" alt="Corporación para el Desarrollo Sostenible del Norte y Oriente de la Amazonía (CDA)"></li>
-                                <li><img src="./images/entidades/corpouraba.svg" alt="Corporación para el Desarrollo Sostenible del Sur de la Amazonía (CORPOAMAZONIA)"></li>
-                                <li><img src="./images/entidades/cortolima.svg" alt="Corpouraba"></li>
-                                <li><img src="./images/entidades/ministerio_ambiente.svg" alt="Cortolima"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_cauca.svg" alt="Ministerio de Ambiente y Desarrollo Sostenible"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_regional_valle_cauca.svg" alt="Corporación Autónoma Regional del Cauca (CRC)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_cundinamarca.svg" alt="Corporación Autónoma Regional del Valle del Cauca (CVC)"></li>
-                                <li><img src="./images/entidades/corporacion_autonoma_cuencas_negro_nare.svg" alt="Corporación Autónoma Regional De Cundinamarca (CAR)"></li>
-                                <li><img src="./images/entidades/investigaciones_marinas_costeras.svg" alt="Corporación Autónoma Regional De Las Cuencas De Los Ríos Negro Y Nare (CORNARE)"></li>
-                                <li><img src="./images/entidades/ministerio_ciencias.svg" alt="Instituto de Investigaciones Marinas y Costeras José Benito Vives de Andréis (INVEMAR)"></li>
-                                <li><img src="./images/entidades/ministerio_educacion.svg" alt="Ministerio de Ciencia, Tecnología e Innovación"></li>
-                                <li><img src="./images/entidades/universidad_distrital_francisco_jose_de_caldas.svg" alt="Ministerio de Educación Nacional"></li>
-                                <li><img src="./images/entidades/ministerio_educacion.svg" alt="Universidad Distrital Francisco José de Caldas (UDFJC)"></li>
-                                <li><img src="./images/entidades/departamento_nacional_estadistica_dane.svg" alt="Departamento Administrativo Nacional de Estadística (DANE)"></li>
-                                <li><img src="./images/entidades/igac.svg" alt="Instituto Geográfico Agustín Codazzi (IGAC)"></li>
-                                <li><img src="./images/entidades/unidad_administrativa_catastro_distrital.svg" alt="Unidad Administrativa Especial de Catastro Distrital (UAECD)"></li>
-                                <li><img src="./images/entidades/departamento_nacional_inteligencia.svg" alt="Dirección Nacional de Inteligencia (DNI)"></li>
-                                <li><img src="./images/entidades/unidad_atencion_victimas.svg" alt="Unidad de Atención y Reparación Integral a las Víctimas"></li>
-                                <li><img src="./images/entidades/unidad_busqueda_personas_desaparecidas.svg" alt="Unidad de Búsqueda de Personas Dadas por Desaparecidas en el Contexto y en Razón del Conflicto Armado (UBPD)"></li>
-                                <li><img src="./images/entidades/corporacion_nasa_kiwe.svg" alt="Corporación Nacional para la Reconstrucción de la Cuenca del Río Páez y Zonas Aledañas NASA KI WE"></li>
-                                <li><img src="./images/entidades/unidad_nacional_proteccion.svg" alt="Unidad Nacional de Protección (UNP)"></li>
-                                <li><img src="./images/entidades/instituto_planificacion_soluciones_energeticas.svg" alt="Instituto de Planificación y Promoción de Soluciones Energéticas para Zonas No Interconectadas (IPSE)"></li>
-                                <li><img src="./images/entidades/ministerio_energia.svg" alt="Ministerio de Minas y Energía - Gestión General"></li>
-                                <li><img src="./images/entidades/servicio_geologico_colombiano.svg" alt="Servicio Geológico Colombiano"></li>
-                                <li><img src="./images/entidades/unidad_planeacion_minero_energetica.svg" alt="Unidad de Planeación Minero-Energética (UPME)"></li>
-                                <li><img src="./images/entidades/comision_regulacion_energia_gas.svg" alt="Comisión de Regulación de Energía y Gas (CREG)"></li>
-                                <li><img src="./images/entidades/agencia_renovacion_territorio.svg" alt="Agencia de Renovación del Territorio (ART)"></li>
-                                <li><img src="./images/entidades/agencia_nacional_inmobiliaria.svg" alt="Agencia Nacional Inmobiliaria Virgilio Barco Vargas"></li>
-                                <li><img src="./images/entidades/agencia_reincorporación_normalización.svg" alt="Agencia para la Reincorporación y la Normalización (ARN)"></li>
-                                <li><img src="./images/entidades/direecion_sustitucion_cultivos_ilicitos.svg" alt="Dirección de Sustitución de Cultivos de Uso Ilícito"></li>
-                                <li><img src="./images/entidades/unidad_nacional_gestion_riesgo_desastre.svg" alt="Unidad Nacional para la Gestión del Riesgo de desastres"></li>
-                                <li><img src="./images/entidades/gobernacion_antioquia.svg" alt="Gobernación de Antioquia"></li>
-                                <li><img src="./images/entidades/registraduria_nacional.svg" alt="Registraduría Nacional del Estado Civil"></li>
-                                <li><img src="./images/entidades/servicio_nacional_aprendizaje.svg" alt="Servicio Nacional de Aprendizaje (SENA)"></li>
-                                <li><img src="./images/entidades/superintendecia_puertos_transporte.svg" alt="Superintendencia de Puertos y Transporte"></li>
-                                <li><img src="./images/entidades/agencia_nacional_infraestructura.svg" alt="Agencia Nacional de Infraestructura"></li>
-                                <li><img src="./images/entidades/agencia_nacional_seguridad_vial.svg" alt="Agencia Nacional de Seguridad Vial"></li>
-                                <li><img src="./images/entidades/insitituto_nacional_vias.svg" alt="Instituto Nacional de Vías"></li>
-                                <li><img src="./images/entidades/ministerio_transporte.svg" alt="Ministerio de Transporte"></li>
-                                <li><img src="./images/entidades/aeronautica-civil.svg" alt="Unidad Administrativa Especial de la Aeronáutica Civil"></li>
-                                <li><img src="./images/entidades/unidad_planeacion_infraestructura_transporte.svg" alt="Unidad de Planeación del Sector de Infraestructura de Transporte (UPIT)"></li>
-                                <li><img src="./images/entidades/comision_regulacion_agua_saneamiento.svg" alt="Comisión de Regulación de Agua Potable y Saneamiento Básico (CRA)"></li>
-                                <li><img src="./images/entidades/ministerio_vivienda.svg" alt="Ministerio de Vivienda, Ciudad y Territorio"></li>
-                                <li><img src="./images/entidades/central_inversiones_cisa.svg" alt="CISA"></li>
-                                <li><img src="./images/entidades/fondo_adaptacion.svg" alt="Fondo Adaptación"></li>
-                                <li><img src="./images/entidades/departamento_nacional_planeacion.svg" alt="Departamento Nacional de Planeación"></li>
-                                <li><img src="./images/entidades/instituto_colombiano_antropologia.svg" alt="Instituto Colombiano de Antropología (ICANH)"></li>
-                                <li><img src="./images/entidades/sociedad_activos_especiales.svg" alt="Sociedad de Activos Especiales (SAE)"></li>
-                            </ul>
-                        </div>                                                
                     </div>
-                </ul>
+                    <div class="col-md-6">
+                        <img src="/observatoriotierrayterritorio/images/que_es_ott.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 d-flex pr-0">
+                        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/783QSo2BG-0?si=jtbHwi7WKzVRp9kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-text col-md-12 col-lg-6 d-flex align-items-center">
+                        <div class="text px-3">
+                            <h4 class="title mb-4 text-left">¿Cómo funciona el Observatorio de la Tierra y el Territorio?</h4>
+                            <p>El Observatorio de la Tierra y el Territorio se basa en tecnología avanzada, lo que permite un monitoreo continuo y sistemático de la superficie terrestre mediante el uso de imágenes satelitales y otros datos geoespaciales. Este observatorio no solo es una herramienta esencial para el cumplimiento de los objetivos del Plan Nacional de Desarrollo 2023-2026 en cuanto al Ordenamiento del Territorio, sino que también desempeña un papel fundamental en la gestión y preservación de los recursos naturales, seguimiento de cambios ambientales a nivel local, regional y nacional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section plataforma">
+            <div class="container">           
+                <div class="col-md-10 justify-content-center m-auto text-center">
+                    <h2 class="title">Plataforma Web Observatorio de la Tierra y el Territorio</h2>
+                    La Plataforma Web permite acceder, consultar y visualizar imágenes satelitales diarias adquiridas mediante la constelación PlanetScope y otros proveedores, sobre el territorio colombiano junto con un Basemap para su despliegue mediante servicios web geográficos en plataformas SIG. 
+                    <br>
+                    <br>
+                    El Observatorio de la Tierra y el Territorio es una herramienta que tiene como objetivo proporcionar información espacial oportuna, precisa y confiable sobre la transformación del territorio, para apoyar la toma de decisiones y la planeación estratégica del Instituto Geográfico Agustín Codazzi (IGAC) y otras entidades públicas en el marco de la Administración del Territorio.
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number">1.1</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Millones de km2</h3>
+                                <p class="card-text">
+                                    Cubrimiento de imágenes diarias
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number" id="nimagenes">3.8</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Millones de imágenes</h3>
+                                <p class="card-text">
+                                    En nuestra base de datos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swiper-slide card justify-content-center text-center bg-transparent border-0">
+                            <div class="number">+72</div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Entidades</h3>
+                                <p class="card-text">
+                                    Adscritas a la plataforma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section pt-5 pb-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="title">
+                            ¿Qué es el OTT?
+                        </h2>
+                        <p>
+                            Plataforma virtual de información espacial, permitiendo el monitoreo y seguimiento de los cambios del territorio colombiano a partir de datos obtenidos por percepción remota. El Observatorio de la Tierra y el Territorio es una herramienta fundamental para la toma de decisiones sobre el uso del territorio, la protección de los recursos naturales y la mitigación del cambio climático. Apoya procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="card-img-top" src="/observatoriotierrayterritorio/images/image016.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> -->
+        <div class="section swiper-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="swiper-module">
+                            <div class="beer-slider">
+                                <div class="pat1" data-beer-src=""></div>
+                               <dic class="beer-reveal">
+                               <div class="pat2" data-beer-src=""></div>
+                           </div>
+                        </div>
+                        <p class="copy mt-1">
+                            Caso de inundación San Marcos - Ciénaga Los Lagos. <b>N: 2505142 m; E: 4763474 m</b>
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <h2 class="title text-left">
+                            Imágenes y mosaicos
+                        </h2>
+                        <p>
+                            La plataforma del Observatorio de la Tierra y el Territorio le facilita una gran cantidad de imágenes de media y alta resolución para diversos tipos de análisis referentes a los cambios en el territorio. Las imágenes cuentan con resolución espectral de 3 a 8 bandas. Adicionalmente. 
+                            <br>
+                            <br>
+                            Las imágenes cuentan con una resolución espacial media y alta de 3.7 metros y 50 centímetros respectivamente; permitiendo la consulta y consumo de imágenes satelitales con resolución temporal diaria a nivel nacional.
+                            <br>
+                            <br>
+                            El acceso a esta información, apoyará procesos de diagnóstico y actualización del modelamiento del espacio territorial de manera sostenible, permitiendo evaluar la efectividad de las políticas públicas, entre otras.
+                        </p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <img class="shape" src="/observatoriotierrayterritorio/images/shape2.png" alt="">
+        <div class="section wizard">
+            <div class="container">
+                <div class="row">
+                    <div class="wizard-buttons col-md-4">
+                        <div class="btn w-100 text-center"><b>Mosaicos trimestrales: </b>Caso de Estudio Deforestación Orinoquía</div>
+                        <button class="btn active">Primer Trimestre 2016</button>
+                        <button class="btn">Primer Trimestre 2017</button>
+                        <button class="btn">Primer Trimestre 2018</button>
+                        <button class="btn">Primer Trimestre 2019</button>
+                        <button class="btn">Primer Trimestre 2020</button>
+                        <button class="btn">Primer Trimestre 2021</button>
+                        <button class="btn">Primer Trimestre 2022</button>
+                        <button class="btn">Primer Trimestre 2023</button>
+                    </div>
+                    <div class="steps col-md-8 d-flex align-items-center">            
+                        <div class="step active">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2016.jpg" alt="inicio">
+                                <p>
+                                    Deforestación
+                                    <br>
+                                    Reserva Forestal cerca de Río Inírida
+                                    <br>
+                                    N: 1797586 m; E: 5064225 m
+                                </p>
+                            </div>
+                        </div>            
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2017.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+            
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2018.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+            
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2019.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2020.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2021.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2022.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <div class="img-container">
+                                <img src="/observatoriotierrayterritorio/images/tercertrimestre2023.jpg" alt="inicio">
+                            </div>
+                            <p>
+                                Deforestación
+                                <br>
+                                Reserva Forestal cerca de Río Inírida
+                                <br>
+                                N: 1797586 m; E: 5064225 m
+                            </p>
+                        </div>
+            
+                        <!-- Add more steps here if needed -->
+            
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div class="section objetivos">
+            <div class="container">           
+                <h2 class="title mb-4">
+                    Objetivos
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/observatoriotierrayterritorio/images/info-eficiente.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Fuentes de información eficiente</h5>
+                              <p class="card-text">Uso de soluciones tecnológicas existentes, proveedores mundiales directos, propietarios de plataformas satelitales de toma de imágenes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/observatoriotierrayterritorio/images/info-actualizada-b.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Información Actualizada</h5>
+                              <p class="card-text">Análisis oportuno y multitemporal del territorio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/observatoriotierrayterritorio/images/gestion-datos-b.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Gestión asertiva de los datos</h5>
+                              <p class="card-text">Información apta para el ejercicio de múltiples entidades públicas, utilizada de manera responsable por personal idóneo, en el marco del a ICDE y la CCE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/observatoriotierrayterritorio/images/asociacion-entidades.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Asociación con entidades estatales</h5>
+                              <p class="card-text">Acercamiento con entidades públicas de orden nacional para cooperación y fortalecimiento del Observatorio de la Tierra y el Territorio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+                            <img class="card-img-top" src="/observatoriotierrayterritorio/images/analitica.svg" alt="Card image cap">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Analítica de datos Aplicación de IA</h5>
+                              <p class="card-text">Identificación de variaciones geográficas – relieve, cambios antrópicos que demarquen posibles alteraciones de la propiedad o infraestructuras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="section pt-5 pb-5">
+            <div class="container">
+                <h2 class="title text-center">
+                    Panel de consultas dentro de la plataforma
+                </h2>
+                <p>La plataforma de web es amigable con el usuario, permitiéndole realizar consultas según sus necesidades. Además de asegurar información actualizada, permite seleccionar y consumir imágenes según criterios específicos como entidad territorial, fecha, nubosidad, entre otros.</p>
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-6">
+                        <img src="/observatoriotierrayterritorio/images/preview.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/observatoriotierrayterritorio/images/preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="section panel-consultas">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-6">
+                            <img class="card-img-top" src="/observatoriotierrayterritorio/images/publico_objetivo.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="title text-left">
+                                Público objetivo
+                            </h2>
+                            <p>
+                                El Observatorio de la Tierra y el Territorio no solo es una plataforma de consulta y consumo de imágenes, sino un poderoso aliado que permite a las entidades realizar análisis más precisos y confiables en el marco de la Administración del Territorio, facilitando la identificación y monitoreo de la transformación del territorio. Le invitamos a aprovechar al máximo las herramientas del Observatorio y a compartir sus aportes para seguir fortaleciendo esta iniciativa. Con su participación, podemos construir un mejor futuro para nuestro territorio.
+                            </p>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section noticias">
+            <div class="container">           
+                <h2 class="title mb-4">
+                    Noticias
+                </h2>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="swiper-pagination swiper-pagination3 col-12 d-flex mt-5"></div>
+                    <div class="swiper-button-prev swiper2-prev"></div>
+                    <div class="swiper-button-next swiper2-next"></div>
+                    <div id="swiper3" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            EL 100% DE COLOMBIA YA CUENTA CON IMÁGENES SATELITALES.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac
+                                        </div>
+                                        <p>
+                                            Bogotá, D.C. 2 de febrero de 2024. El Instituto Geográfico Agustín Codazzi - IGAC lanzó la fase inicial del Observatorio de la Tierra y el Territorio, una plataforma digital con la que se obtendrán información espacial para la evaluación, monitoreo y seguimiento a los cambios que se generan en todo el territorio nacional.
+                                        </p>
+                                        <br>
+                                        <a class="btn" href="https://www.igac.gov.co/noticias/el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="icono" src="/observatoriotierrayterritorio/images/news1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="icono" src="/observatoriotierrayterritorio/images/news2.png" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="subtitle">
+                                            Boletín Semanal No. 7: El 100% de Colombia ya cuenta con imágenes satelitales.
+                                        </h3>
+                                        <div class="resume mb-3">
+                                            Gracias al observatorio de la tierra y el territorio del igac.
+                                        </div>
+                                        <p>
+                                            La base de datos Ambientalex.info, comparte con la Comunidad Unadista el Boletín Semanal No.7 que informa sobre la normativa y los eventos en protección y preservación del medio ambiente.
+                                        </p>
+                                        <br>
+                                        <a class="btn" href="https://noticias.unad.edu.co/index.php/unad-noticias/todas/88-biblioteca/6683-boletin-semanal-no-7-el-100-de-colombia-ya-cuenta-con-imagenes-satelitales-gracias-al-observatorio-de-la-tierra-y-el-territorio-del-igac" target="_blank">
+                                            Ver noticia completa
+                                        </a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -347,13 +622,13 @@
             <div class="footer-container">
                 <div class="rowf">
                     <div class="col-md-6f">
-                        <h2 class="footer-titulo">Instituto Geográfico Agustín Codazzi - IGAC
+                        <h2 class="footer-titulo">Instituto Geográfico Agustín Codazzi - IGAC</h2>
                     </div>
                     <div class="logos-footer col-md-6f">&nbsp;</div>
                 </div>
                 <div class="rowf">
                     <div class="col-md-6f">
-                        <h2 class="sub-titulo-sede-gov-co">Información sede principal
+                        <h2 class="sub-titulo-sede-gov-co">Información sede principal</h2>
                     
                         <h3>Dirección:</h3> 
                         <p>Bogotá D.C. - Carrera 30 # 48-51</p>
@@ -375,7 +650,7 @@
                         </p>
                         <p>NIT: 8999990049</p>
                     
-                        <p>©Copyright 2021 - Todos los derechos reservados Gobierno de Colombia</p>
+                        <p>©Copyright 2024 - Todos los derechos reservados Gobierno de Colombia</p>
                     </div>                
                     <div class="col-md-6f">
                         <h3>Contáctenos en nuestras redes sociales</h3>
@@ -383,20 +658,20 @@
                         <div class="redes-sociales">
                             <p>
                                 <a class="btn" href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
-                                    <img alt="Visitar Facebook IGAC" class="icono-redes" src="./images/footer/facebook.svg">
+                                    <img alt="Visitar Facebook IGAC" class="icono-redes" src="/observatoriotierrayterritorio/images/footer/facebook.svg">
                                     Facebook IGAC 
                                 </a>
                             </p>
                     
                             <p>
                                 <a class="btn" href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
-                                    <img alt="Visitar Twitter IGAC" class="icono-redes" src="./images/footer/twitter.svg">
+                                    <img alt="Visitar Twitter IGAC" class="icono-redes" src="/observatoriotierrayterritorio/images/footer/twitter.svg">
                                     Twitter IGAC 
                                 </a>
                             </p>
                     
                             <p>
-                                <a class="btn" href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="./images/footer/instagram.svg">
+                                <a class="btn" href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/observatoriotierrayterritorio/images/footer/instagram.svg">
                                     Instagram IGAC 
                                 </a>
                             </p>
@@ -411,9 +686,9 @@
         </div>
         <div class="gov-co-footer-pie">
             <div class="gov-co-footer-auto containerf">
-                <img alt="Logo marca de Colombia" class="gov-co-logo-pie-blanco" src="./images/marca_colombia.svg">
+                <img alt="Logo marca de Colombia" class="gov-co-logo-pie-blanco" src="/observatoriotierrayterritorio/images/marca_colombia.png">
 
-                <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="./images/header_govco.svg">
+                <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="/observatoriotierrayterritorio/images/header_govco.png">
 
                 <a class="btn" class="text-white text-align-right" href="https://www.gov.co" target="_blank">
                     Conoce GOV.CO aquí
@@ -422,34 +697,18 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <!--swipper js-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
-    <script src="./script.js"></script>
-    <script src="./navbar.js"></script>
-    <script>
-        document.getElementById('filterInput').addEventListener('input', function() {
-            var filterValue = this.value.toLowerCase().trim();
-            var listItems = document.querySelectorAll('#listaEntidades li');
+
+    <script src='https://unpkg.com/beerslider/dist/BeerSlider.js'></script>
+
+    <script src="/observatoriotierrayterritorio/script.js"></script>
+    <script  src="/observatoriotierrayterritorio/navbar.js"></script>
     
-            listItems.forEach(function(item) {
-                var itemName = item.textContent.toLowerCase().trim();
-                var img = item.querySelector('img');
-                var altText = '';
-                if (img) {
-                    altText = img.getAttribute('alt').toLowerCase().trim();
-                }
-    
-                if (itemName.indexOf(filterValue) !== -1 || altText.indexOf(filterValue) !== -1) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    </script>
 </body>
+</html>
